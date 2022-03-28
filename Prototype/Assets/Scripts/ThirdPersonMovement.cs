@@ -7,7 +7,6 @@ public class ThirdPersonMovement : MonoBehaviour {
     public Transform cam;
 
     public float speed = 6f;
-    public float jumpHeight = 1f;
     //Turning/looking:
     public float turnSmoothTime = 0.1f;
     float tunrSmoothVelocity;
@@ -26,8 +25,51 @@ public class ThirdPersonMovement : MonoBehaviour {
             Vector3 moveDir = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
             controller.Move(moveDir.normalized * speed * Time.deltaTime);
         }
-        if (Input.GetKeyDown("space")) {
-            transform.position = transform.position + new Vector3(0f, 1f, 0f).normalized;
-        }
+        //Jumping
+        //if (Input.GetKeyDown(KeyCode.Space)) {
+            //transform.position = transform.position + new Vector3(0f, jumpHeight, 0f).normalized;
+        //}
+        
+        ////
+        if (Input.GetAxisRaw("Jump")) {
+                Debug.Log("Input inputs");
+                velocity = Mathf.Sqrt(jumpHeight * -2f * (gravityScale));
+            }
+            velocity += gravity * gravityScale * Time.deltaTime;
+            MovePlayer();
     }
+
+
+        public CharacterController cc;
+        public float gravity = -9.81f;
+        public float gravityScale = 1;
+        public float jumpHeight = 4;
+        float velocity;
+        
+        void MovePlayer() {
+            cc.Move(new Vector3(0, velocity, 0) * Time.deltaTime);
+        }
+    
+
+/*public class CharacterControllerJump : MonoBehaviour {
+    public CharacterController cc;
+    public float gravity = -9.81f;
+    public float gravityScale = 1;
+    public float jumpHeight = 4;
+    float velocity;
+
+    void Update() {
+        if (Input.GetKeyDown(KeyCode.Space)) {
+            Debug.Log("Input inputs");
+            velocity = Mathf.Sqrt(jumpHeight * -2f * (gravityScale));
+        }
+        velocity += gravity * gravityScale * Time.deltaTime;
+        MovePlayer();
+    }
+    void MovePlayer() {
+        cc.Move(new Vector3(0, velocity, 0) * Time.deltaTime);
+    }
+}*/
 }
+
+        
