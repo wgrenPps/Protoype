@@ -137,7 +137,7 @@ GameObject:
   - component: {fileID: 160074130}
   m_Layer: 3
   m_Name: Ground
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -577,7 +577,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 578273181}
-  m_LocalRotation: {x: 0.019882951, y: -0.000000017202977, z: 3.421135e-10, w: 0.99980235}
+  m_LocalRotation: {x: 0.019882951, y: 0.000000017202984, z: -3.4211364e-10, w: 0.99980235}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -911,7 +911,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.019882947, y: -0.000000017204396, z: 3.4208458e-10, w: 0.9998023}
+  m_LocalRotation: {x: 0.019882947, y: 0.000000017204806, z: -3.4207684e-10, w: 0.9998023}
   m_LocalPosition: {x: 0, y: 4, z: -7.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -963,7 +963,7 @@ GameObject:
   - component: {fileID: 1076152953}
   m_Layer: 3
   m_Name: Room1
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1157,11 +1157,9 @@ MonoBehaviour:
   controller: {fileID: 1225250355}
   cam: {fileID: 963194228}
   speed: 6
-  turnSmoothTime: 0.1
-  cc: {fileID: 1225250355}
-  gravity: -9.81
-  gravityScale: 1
-  jumpHeight: 4
+  groundedPlayer: 1
+  jumpHeight: 8
+  gravityValue: -9.81
 --- !u!143 &1225250355
 CharacterController:
   m_ObjectHideFlags: 0
@@ -1327,7 +1325,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1978186534}
-  m_LocalRotation: {x: 0.0017418128, y: -8.475591e-11, z: 1.4762916e-13, w: 0.9999985}
+  m_LocalRotation: {x: 0.0017418106, y: -6.0429833e-10, z: 1.052575e-12, w: 0.9999985}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
