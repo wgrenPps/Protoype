@@ -7,10 +7,11 @@ public class ThirdPersonMovement : MonoBehaviour {
     public CharacterController controller;
     public Transform cam;
     public float speed = 6f;
+
     //Jumping junk
     private Vector3 playerVelocity;
     public bool groundedPlayer;
-    public float jumpHeight = 2.0f;
+    public float jumpHeight = 1.0f;
     public float gravityValue = -9.81f;
     
     //Rotating/looking:
@@ -30,19 +31,15 @@ public class ThirdPersonMovement : MonoBehaviour {
 
             Vector3 moveDir = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
             controller.Move(moveDir.normalized * speed * Time.deltaTime);
-        }  
+        }
         groundedPlayer = controller.isGrounded;
-    }
 
-    void FixedUpdate() {
-        //Jumping
-        if (Input.GetButtonDown("Jump") && groundedPlayer) {
-            playerVelocity.y += Mathf.Sqrt(jumpHeight * -3.0f * gravityValue);
-            
+        if (Input.GetButtonDown("Jump") && groundedPlayer == true) {
+            playerVelocity.y = Mathf.Sqrt(jumpHeight * -3.0f * gravityValue);
+
             Debug.Log("jumps");
         }
         playerVelocity.y += gravityValue * Time.deltaTime;
         controller.Move(playerVelocity * Time.deltaTime);
-        
     }
 }
