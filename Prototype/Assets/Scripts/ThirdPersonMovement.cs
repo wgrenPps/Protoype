@@ -32,6 +32,7 @@ public class ThirdPersonMovement : MonoBehaviour {
             Vector3 moveDir = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
             controller.Move(moveDir.normalized * speed * Time.deltaTime);
         }
+        //Jumping movement: 
         groundedPlayer = controller.isGrounded;
 
         if (Input.GetButtonDown("Jump") && groundedPlayer == true) {
