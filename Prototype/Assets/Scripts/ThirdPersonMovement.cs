@@ -37,8 +37,6 @@ public class ThirdPersonMovement : MonoBehaviour {
 
         if (Input.GetButtonDown("Jump") && groundedPlayer == true) {
             playerVelocity.y = Mathf.Sqrt(jumpHeight * -3.0f * gravityValue);
-
-            Debug.Log("jumps");
         }
         playerVelocity.y += gravityValue * Time.deltaTime;
         controller.Move(playerVelocity * Time.deltaTime);
