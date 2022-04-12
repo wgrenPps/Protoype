@@ -11,7 +11,7 @@ public class ThirdPersonMovement : MonoBehaviour {
     //Jumping junk
     private Vector3 playerVelocity;
     public bool groundedPlayer;
-    public float jumpHeight = 1.0f;
+    public float jumpHeight = 10.0f;
     public float gravityValue = -9.81f;
     
     //Rotating/looking:
@@ -36,7 +36,7 @@ public class ThirdPersonMovement : MonoBehaviour {
         groundedPlayer = controller.isGrounded;
 
         if (Input.GetButtonDown("Jump") && groundedPlayer == true) {
-            playerVelocity.y = Mathf.Sqrt(jumpHeight * -3.0f * gravityValue);
+            playerVelocity.y = Mathf.Sqrt(jumpHeight * -0.50f * gravityValue);
         }
         playerVelocity.y += gravityValue * Time.deltaTime;
         controller.Move(playerVelocity * Time.deltaTime);

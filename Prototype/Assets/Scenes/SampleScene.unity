@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -214,7 +214,7 @@ Transform:
   m_GameObject: {fileID: 160074129}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 1, z: 2}
+  m_LocalScale: {x: 4, y: 1, z: 4}
   m_Children: []
   m_Father: {fileID: 1076152953}
   m_RootOrder: 0
@@ -275,7 +275,7 @@ MonoBehaviour:
   m_YAxis:
     Value: 0.5
     m_SpeedMode: 0
-    m_MaxSpeed: 5
+    m_MaxSpeed: 0.5
     m_AccelTime: 0.2
     m_DecelTime: 0.1
     m_InputAxisName: Mouse Y
@@ -299,7 +299,7 @@ MonoBehaviour:
   m_XAxis:
     Value: 0
     m_SpeedMode: 0
-    m_MaxSpeed: 450
+    m_MaxSpeed: 100
     m_AccelTime: 0.1
     m_DecelTime: 0.1
     m_InputAxisName: Mouse X
@@ -328,7 +328,7 @@ MonoBehaviour:
   m_SplineCurvature: 0.2
   m_Orbits:
   - m_Height: 10
-    m_Radius: 5
+    m_Radius: 6.2
   - m_Height: 4
     m_Radius: 7.5
   - m_Height: 1
@@ -584,6 +584,36 @@ Transform:
   - {fileID: 1179870204}
   m_Father: {fileID: 237448670}
   m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &607896566
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 607896567}
+  m_Layer: 0
+  m_Name: NavMesh
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &607896567
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 607896566}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &678478374
 GameObject:
@@ -907,7 +937,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 740788375}
-  m_LocalRotation: {x: 0.038376506, y: 0.000000017060428, z: -6.552023e-10, w: 0.99926335}
+  m_LocalRotation: {x: 0.03837653, y: -0.00000001746183, z: 6.706184e-10, w: 0.99926335}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -1202,7 +1232,7 @@ GameObject:
   - component: {fileID: 1225250355}
   - component: {fileID: 1225250354}
   m_Layer: 0
-  m_Name: ThirdPerson Player
+  m_Name: thirdPersonPlayer
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1239,7 +1269,7 @@ MonoBehaviour:
   cam: {fileID: 963194228}
   speed: 8
   groundedPlayer: 1
-  jumpHeight: 1
+  jumpHeight: 10
   gravityValue: -9.81
 --- !u!143 &1225250355
 CharacterController:
@@ -1503,7 +1533,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1978186534}
-  m_LocalRotation: {x: 0.0020529937, y: 0.000000017207098, z: -3.5326138e-11, w: 0.9999979}
+  m_LocalRotation: {x: 0.0020529933, y: 0.000000017210924, z: -3.5333982e-11, w: 0.9999979}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -1564,7 +1594,7 @@ NavMeshAgent:
   m_AutoRepath: 1
   m_Height: 2
   m_BaseOffset: 0
-  m_WalkableMask: 4294967295
+  m_WalkableMask: 5
   m_ObstacleAvoidanceType: 4
 --- !u!114 &2066626828
 MonoBehaviour:
@@ -1578,8 +1608,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6ccc9d1a211d2b429b4ab5230ce043e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  monster: {fileID: 0}
-  wandering: 1
+  monster: {fileID: 2066626827}
+  bungie: {fileID: 1225250353}
+  whatIsGround:
+    serializedVersion: 2
+    m_Bits: 8
+  whatIsBungie:
+    serializedVersion: 2
+    m_Bits: 64
+  walkPoint: {x: 0, y: 0, z: 0}
+  walkPointRange: 5
+  timeBetweenAttacks: 0.5
+  sightRange: 20
+  attackRange: 12
+  bungieInSightRange: 0
+  bungieInAttackRange: 0
 --- !u!1 &2077314837
 GameObject:
   m_ObjectHideFlags: 3
