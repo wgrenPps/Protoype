@@ -11,7 +11,7 @@ public class EnemyControl : MonoBehaviour {
 
     //wandering
     public Vector3 walkPoint;
-    bool walkPointSet;
+    public bool walkPointSet;
     public float walkPointRange;
 
     //Attacking
@@ -35,19 +35,23 @@ public class EnemyControl : MonoBehaviour {
         if (!bungieInSightRange && !bungieInAttackRange) Wander();
         if (bungieInSightRange && !bungieInAttackRange) Chase();
         if (bungieInAttackRange && bungieInSightRange) Attack();
+
+        Debug.Log(walkPoint);
     }
     
     private void Wander() {
-        if (!walkPointSet) SearchWalkPoint();
+        if (walkPointSet != true) SearchWalkPoint();
 
         if (walkPointSet) {
             monster.SetDestination(walkPoint);
+            Debug.Log("destination set");
         }
         Vector3 distanceToWalkPoint = transform.position - walkPoint;
         
         //reached the walkPoint:
         if (distanceToWalkPoint.magnitude < 1f) {
             walkPointSet = false;
+            Debug.Log("walkpoint false");
         }
     }
     private void SearchWalkPoint() {
@@ -67,7 +71,6 @@ public class EnemyControl : MonoBehaviour {
 
     private void Attack() {
         monster.SetDestination(transform.position);
-        transform.LookAt(bungie);
 
         if (!alreadyAttacked) {
             alreadyAttacked = true;
