@@ -6,12 +6,13 @@ public class weapons : MonoBehaviour {
     public Transform anchor;
     public Transform club;
     float t;
+    public float t1;
+    public float t2;
     bool thing;
     bool x;
     // Start is called before the first frame update
     void Start() {
         t = 0;
-
     }
 
     // Update is called once per frame
@@ -27,17 +28,17 @@ public class weapons : MonoBehaviour {
         }
         if (thing == true && x != true) {
             t += Time.deltaTime;
-                if (t < 1.1) { 
-            anchor.localRotation =  Quaternion.Euler( (30 * t) * 4f, 3f * (20 * t), 35);
+                if (t < t1) { 
+            anchor.localRotation =  Quaternion.Euler( (30 * t) * 4f, 3f * (50 * t), 90);
             }
         } else if (thing == true && x == true) {
             t += Time.deltaTime;
-            if (t < 1.1)
+            if (t < t1)
             {
-                anchor.localRotation = Quaternion.Euler((20 * t) * 6f, -3f * (50 * t), -35);
+                anchor.localRotation = Quaternion.Euler((20 * t) * 6f, -3f * (50 * t), -90);
             }
         }
-        if (t > 1.8) {
+        if (t > t2) {
             
             thing = false;
             t = 0;
