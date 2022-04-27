@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.4465782, g: 0.49641252, b: 0.5748167, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3449,8 +3449,9 @@ MonoBehaviour:
   controller: {fileID: 462993675}
   cam: {fileID: 1502401442}
   speed: 6
-  jumpHeight: 1
-  turnSmoothTime: 0.1
+  groundedPlayer: 0
+  jumpHeight: 3.97
+  gravityValue: -9.81
 --- !u!143 &462993675
 CharacterController:
   m_ObjectHideFlags: 0
