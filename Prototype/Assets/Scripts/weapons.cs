@@ -8,44 +8,44 @@ public class weapons : MonoBehaviour {
     float t;
     public float t1;
     public float t2;
-    bool thing;
-    bool x;
-    // Start is called before the first frame update
+    bool attack1;
+    bool attack2;
+
     void Start() {
         t = 0;
     }
 
-    // Update is called once per frame
-    void Update() { 
+    void Update() {
+        //left click attack
         if (Input.GetKeyDown(KeyCode.Mouse0)) {
-            thing = true;
-
+            attack1 = true;
         }
+
+        //right click attack
         if (Input.GetKeyDown(KeyCode.Mouse1)) {
-            thing = true;
-            x = true;
+            attack2 = true;
+        }
 
-        }
-        if (thing == true && x != true) {
+        //left click attack movement:
+        if (attack1 == true) {
             t += Time.deltaTime;
-                if (t < t1) { 
-            anchor.localRotation =  Quaternion.Euler( (30 * t) * 4f, 3f * (50 * t), 90);
+            if (t < t1) { 
+            anchor.localRotation =  Quaternion.Euler( (30 * t) * 4f, 20f * (50 * t), 90);
             }
-        } else if (thing == true && x == true) {
+            //right click attack movement:        
+        } else if (attack2 == true) {
             t += Time.deltaTime;
-            if (t < t1)
-            {
-                anchor.localRotation = Quaternion.Euler((20 * t) * 6f, -3f * (50 * t), -90);
+            if (t < t1) {
+                anchor.localRotation = Quaternion.Euler((20 * t) * 6f, -20f * (50 * t), -90);
             }
         }
+
+        //attack cooldown
         if (t > t2) {
-            
-            thing = false;
+            attack1 = false;
             t = 0;
             anchor.localRotation = Quaternion.Euler(-(30 * t), (20 * t), -35);
-            if (x == true) {
-                x = false;
-            }
+            attack2 = false;
         }
     }
 }
