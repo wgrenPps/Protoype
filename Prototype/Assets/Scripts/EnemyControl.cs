@@ -9,6 +9,8 @@ public class EnemyControl : MonoBehaviour {
     
     public LayerMask whatIsGround, whatIsBungie;
 
+    public int health;
+
     //wandering
     public Vector3 walkPoint;
     public bool walkPointSet;
@@ -22,10 +24,19 @@ public class EnemyControl : MonoBehaviour {
     public float sightRange, attackRange;
     public bool bungieInSightRange, bungieInAttackRange;
 
+    //item drops stuff
+    public GameObject drop; //your club
+
+
+    void Start() {
+        health = 1;
+    }
+
     private void Awake() {
         bungie = GameObject.Find("thirdPersonPlayer").transform;
         monster = GetComponent<NavMeshAgent>();
     }
+   
 
     private void Update() {
         //Check for sight and attack range:
@@ -35,6 +46,10 @@ public class EnemyControl : MonoBehaviour {
         if (!bungieInSightRange && !bungieInAttackRange) Wander();
         if (bungieInSightRange && !bungieInAttackRange) Chase();
         if (bungieInAttackRange && bungieInSightRange) Attack();
+    }
+
+    private void FixedUpdate() {
+        if (health == 0) Destroy(this.gameObject);
     }
     
     private void Wander() {
@@ -77,5 +92,9 @@ public class EnemyControl : MonoBehaviour {
     private void ResetAttack() {
         alreadyAttacked = false;
     }
-    
+
+    //when enemy gets destroyed it becomes a club
+    private void OnDestroy() {
+        //Instantiate(drop, Vector3(monster.x, monster.y + 1, monster.z), drop.transform.rotation);
+    }
 }
