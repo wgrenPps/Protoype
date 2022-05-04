@@ -25,11 +25,11 @@ public class EnemyControl : MonoBehaviour {
     public bool bungieInSightRange, bungieInAttackRange;
 
     //item drops stuff
-    public GameObject drop; //your club
+    //public GameObject drop; //your club
 
 
     void Start() {
-        health = 1;
+        health = 5;
     }
 
     private void Awake() {
@@ -94,7 +94,7 @@ public class EnemyControl : MonoBehaviour {
     }
 
     //when enemy gets destroyed it becomes a club
-    private void OnDestroy() {
-        //Instantiate(drop, Vector3(monster.x, monster.y + 1, monster.z), drop.transform.rotation);
-    }
+    /*private void OnDestroy() {
+        Instantiate(drop, transform.position, drop.transform.rotation);
+    }*/
 }

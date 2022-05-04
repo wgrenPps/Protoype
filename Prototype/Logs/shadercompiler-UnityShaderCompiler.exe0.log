@@ -1,6 +1,7 @@
 Base path: 'C:/Unity Installs/2020.3.33f1/Editor/Data', plugins path 'C:/Unity Installs/2020.3.33f1/Editor/Data/PlaybackEngines'
 Cmd: initializeCompiler
 
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 =======
 Cmd: preprocess
@@ -167,3 +168,6 @@ Cmd: compileSnippet
 
 Cmd: shutdown
 >>>>>>> shading
+=======
+Cmd: shutdown
+>>>>>>> Stashed changes
