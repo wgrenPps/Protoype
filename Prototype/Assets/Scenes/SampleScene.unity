@@ -175,7 +175,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 2a9dbcefd20c39e40b01d5d6e86fcce2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1557,7 +1557,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1978186534}
-  m_LocalRotation: {x: -0.0046026674, y: 0.5881278, z: 0.003347095, w: 0.808748}
+  m_LocalRotation: {x: -0.004602663, y: 0.5881278, z: 0.0033470923, w: 0.808748}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -1698,6 +1698,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7107816903915098424, guid: d5134eeecd01b5b44905956b9c6399d4, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a3c601dff9932e042b6d32e7ef2d6c5d, type: 2}
+    - target: {fileID: 7107816904114634146, guid: d5134eeecd01b5b44905956b9c6399d4, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a3c601dff9932e042b6d32e7ef2d6c5d, type: 2}
     - target: {fileID: 7107816904701422105, guid: d5134eeecd01b5b44905956b9c6399d4, type: 3}
       propertyPath: m_Name
       value: Enemies (2)
