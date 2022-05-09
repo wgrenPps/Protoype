@@ -192,7 +192,7 @@ GameObject:
   - component: {fileID: 7885867232064394804}
   m_Layer: 0
   m_Name: Enemies
-  m_TagString: Untagged
+  m_TagString: Bad
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -232,11 +232,11 @@ MonoBehaviour:
   whatIsBungie:
     serializedVersion: 2
     m_Bits: 64
-  health: 0
+  enemyHealth: 0
   walkPoint: {x: 0, y: 0, z: 0}
   walkPointSet: 0
   walkPointRange: 10
-  timeBetweenAttacks: 0.5
+  timeBetweenAttacks: 1
   sightRange: 10
   attackRange: 2
   bungieInSightRange: 0

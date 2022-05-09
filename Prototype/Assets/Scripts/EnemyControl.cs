@@ -9,7 +9,7 @@ public class EnemyControl : MonoBehaviour {
     
     public LayerMask whatIsGround, whatIsBungie;
 
-    public int health;
+    public int enemyHealth;
 
     //wandering
     public Vector3 walkPoint;
@@ -25,11 +25,17 @@ public class EnemyControl : MonoBehaviour {
     public bool bungieInSightRange, bungieInAttackRange;
 
     //item drops stuff
-    //public GameObject drop; //your club
+    //public GameObject drop; //coin GameObject
+
+    //Player Health 
+    ThirdPersonMovement TPM;
+    Vector3 pause;
+    bool stopped;
 
 
     void Start() {
-        health = 5;
+        enemyHealth = 5;
+        TPM = bungie.GetComponent<ThirdPersonMovement>();
     }
 
     private void Awake() {
@@ -49,7 +55,7 @@ public class EnemyControl : MonoBehaviour {
     }
 
     private void FixedUpdate() {
-        if (health == 0) Destroy(this.gameObject);
+        if (enemyHealth == 0) Destroy(this.gameObject);
     }
     
     private void Wander() {
@@ -84,16 +90,28 @@ public class EnemyControl : MonoBehaviour {
         monster.SetDestination(transform.position);
 
         if (!alreadyAttacked) {
+            TPM.bungieHP --;
             alreadyAttacked = true;
             Invoke(nameof(ResetAttack), timeBetweenAttacks);
         }
+
+        //if health is less than or equal to 0, stop movement
+        if (TPM.bungieHP <= 0) {
+            //SceneManager.LoadScene("SampleScene", LoadSceneMode.Single);
+            if (stopped != true) {
+            pause = bungie.position;
+            stopped = true;
+            } else {
+                bungie.position = pause;
+            }
+
+        }
     }
-    
     private void ResetAttack() {
         alreadyAttacked = false;
     }
 
-    //when enemy gets destroyed it becomes a club
+    //when enemy gets destroyed it becomes a coin
     /*private void OnDestroy() {
         Instantiate(drop, transform.position, drop.transform.rotation);
     }*/

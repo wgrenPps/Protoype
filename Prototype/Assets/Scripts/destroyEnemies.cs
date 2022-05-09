@@ -16,7 +16,7 @@ public class destroyEnemies : MonoBehaviour {
         merph = anchor.transform.rotation.eulerAngles;
         hit = true; // gets hit
         HP = other.transform.parent.GetComponent<EnemyControl>(); //aquiring health from other script
-        HP.health -= 1; // lose health
+        HP.enemyHealth -= 1; // lose health
         rb = other.transform.parent.GetComponent<Rigidbody>();
         force = new Vector2(3f * 500f * Mathf.Sin(merph.y), 3f * 500f * (1 - Mathf.Sin(merph.y)));
         }

@@ -80,10 +80,10 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - Vector1_3daa0b61e1c04cedb5ef39e62e1f8bf6: 0.76
+    - Vector1_3daa0b61e1c04cedb5ef39e62e1f8bf6: 0.25
     - Vector1_8544dc4ba9ec4579b43df288cca0995e: 1000
-    - Vector1_8e0b1b86fc5945ddbe319957045a3938: 0.75
-    - Vector1_eca7de1d0fc7453aa282216e3a841580: 1
+    - Vector1_8e0b1b86fc5945ddbe319957045a3938: 0
+    - Vector1_eca7de1d0fc7453aa282216e3a841580: 0.1
     - _AlphaClip: 0
     - _Blend: 0
     - _BumpScale: 1
@@ -95,7 +95,7 @@ Material:
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _EnvironmentReflections: 1
-    - _FalloffAmount: 2
+    - _FalloffAmount: 0.76
     - _GlossMapScale: 1
     - _Glossiness: 0
     - _GlossyReflections: 1

@@ -18,6 +18,9 @@ public class ThirdPersonMovement : MonoBehaviour {
     private float turnSmoothTime = 0.1f;
     float tunrSmoothVelocity;
 
+    //Player Health
+    public int bungieHP;
+
     void Update() {
         //WASD movement:
         float horizontal = Input.GetAxisRaw("Horizontal");
@@ -32,8 +35,8 @@ public class ThirdPersonMovement : MonoBehaviour {
             Vector3 moveDir = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
             controller.Move(moveDir.normalized * speed * Time.deltaTime);
         }
-
         if(groundedPlayer == false) {gravityValue = -9.81f;} else {gravityValue = 0f;}
+
         //Jumping movement: 
         groundedPlayer = controller.isGrounded;
 
@@ -42,5 +45,17 @@ public class ThirdPersonMovement : MonoBehaviour {
         }
         playerVelocity.y += gravityValue * Time.deltaTime;
         controller.Move(playerVelocity * Time.deltaTime);
+    /*
+        GameObject[] Enemies;
+        Enemies = GameObject.FindGameObjectsWithTag("Bad");
+        for(var o = 0; o < Enemies.Length; o ++) {
+            EnemyControl bungieInAttackRange = Enemies[o].GetComponent<EnemyControl>(); //aquiring attack range from other script
+            if (bungieInAttackRange.bungieInAttackRange == true) {
+                bungieHP--;
+            }
     }
+    */
+    }
+    
+    
 }
