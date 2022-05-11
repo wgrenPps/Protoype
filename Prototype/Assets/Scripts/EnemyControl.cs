@@ -97,7 +97,9 @@ public class EnemyControl : MonoBehaviour {
 
         //if health is less than or equal to 0, stop movement
         if (TPM.bungieHP <= 0) {
+            Debug.Log("You Died");
             //SceneManager.LoadScene("SampleScene", LoadSceneMode.Single);
+            
             if (stopped != true) {
             pause = bungie.position;
             stopped = true;

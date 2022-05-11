@@ -11,8 +11,8 @@ public class ThirdPersonMovement : MonoBehaviour {
     //Jumping junk
     private Vector3 playerVelocity;
     public bool groundedPlayer;
-    public float jumpHeight = 10.0f;
-    public float gravityValue = -9.81f;
+    public float jumpHeight;
+    public float gravityValue = -30.81f;
     
     //Rotating/looking:
     private float turnSmoothTime = 0.1f;
@@ -35,27 +35,25 @@ public class ThirdPersonMovement : MonoBehaviour {
             Vector3 moveDir = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
             controller.Move(moveDir.normalized * speed * Time.deltaTime);
         }
-        if(groundedPlayer == false) {gravityValue = -9.81f;} else {gravityValue = 0f;}
+        if(groundedPlayer == false) {gravityValue = -30.81f;} else {gravityValue = 0f;}
 
         //Jumping movement: 
         groundedPlayer = controller.isGrounded;
 
         if (Input.GetButtonDown("Jump") && groundedPlayer == true) {
-            playerVelocity.y = Mathf.Sqrt(jumpHeight * -0.50f * -9.81f);
+            playerVelocity.y = Mathf.Sqrt(jumpHeight * -0.50f * -30.81f);
         }
         playerVelocity.y += gravityValue * Time.deltaTime;
         controller.Move(playerVelocity * Time.deltaTime);
-    /*
+    
         GameObject[] Enemies;
         Enemies = GameObject.FindGameObjectsWithTag("Bad");
+        Debug.Log(Enemies.Length);
         for(var o = 0; o < Enemies.Length; o ++) {
             EnemyControl bungieInAttackRange = Enemies[o].GetComponent<EnemyControl>(); //aquiring attack range from other script
             if (bungieInAttackRange.bungieInAttackRange == true) {
                 bungieHP--;
             }
+        }
     }
-    */
-    }
-    
-    
 }
