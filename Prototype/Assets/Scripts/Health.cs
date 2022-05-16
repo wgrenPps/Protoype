@@ -12,7 +12,9 @@ public class Health : MonoBehaviour {
    public TextMeshProUGUI deathMessage;
    public TextMeshProUGUI textBox;
    public TextMeshProUGUI tutorial;
-   public GameObject profile;
+   public GameObject profileTot;
+   public GameObject profileBun;
+   public GameObject deathScreen;
    public bool dead = false;
    public TextAsset dialogue;
    public string[][] dialogueList;
@@ -21,7 +23,9 @@ public class Health : MonoBehaviour {
    List<string[]> convList;
 
    void Start() {
-       profile.SetActive(false);
+       profileTot.SetActive(false);
+       profileBun.SetActive(false);
+       deathScreen.SetActive(false);
        initialD = dialogue.text.Split('\n');
        dialogueList = new string[initialD.Length][];
        for (int i = 0; i < initialD.Length; i++) {
@@ -31,6 +35,7 @@ public class Health : MonoBehaviour {
    }
    //For .txt reference: conversation; profilenum; text; wait time; tutorial text(optional)
    void OnTriggerEnter(Collider other) {
+       
        if (other.tag == "trap") {
            spiked = true;
        } else if (other.tag != null) {
@@ -45,7 +50,7 @@ public class Health : MonoBehaviour {
                    break;
                }
            }
-           StartCoroutine(conversations());
+           StartCoroutine(conversations(convList));
            Destroy(other.gameObject);
    }
 
@@ -57,19 +62,27 @@ public class Health : MonoBehaviour {
        healthDisplay.text = "Health: " + healthBar;
        if (healthBar <= 0) {
            deathMessage.text = "You died.";
+           deathScreen.SetActive(true);
            dead = true;
        }
    }
-   IEnumerator conversations() {
+   IEnumerator conversations(List<string[]> convList) {
        for (int c = 0; c < convList.Count; c++) {
            //profile.sourceImage = spritesheet(convList[c][1]); this is bad. Needs to be done up
            textBox.text = convList[c][2];
            if (convList[c].Length == 5) {
                tutorial.text = convList[c][4];
            }
+           if (convList[c][1] == "1") {
+               profileTot.SetActive(true);
+           } else if (convList[c][1] == "2") {
+               profileBun.SetActive(true);
+           }
            yield return new WaitForSeconds(float.Parse(convList[c][3]));
            textBox.text = " ";
            tutorial.text = " ";
+           profileBun.SetActive(false);
+           profileTot.SetActive(false);
            yield return new WaitForSeconds(.5f);
        }
    }
