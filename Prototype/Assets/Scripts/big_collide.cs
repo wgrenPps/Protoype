@@ -24,8 +24,7 @@ public class big_collide : MonoBehaviour
     {
         collided = true;
         if (cooldown == 0) {
-            Debug.Log("big suss-cess");
-            StartCoroutine(spikey());
+            StartCoroutine(spikey()); 
             cooldown = 5f;
         }
     }
@@ -44,7 +43,7 @@ public class big_collide : MonoBehaviour
         if (cooldown == 0) {
             stabbed = false;
         }
-        if (spikesActive && collided && helth.spiked && stabbed == false) {
+        if (spikesActive && collided && helth.spiked && stabbed == false && !helth.dead) {
             helth.healthBar--;
             stabbed = true;
         }

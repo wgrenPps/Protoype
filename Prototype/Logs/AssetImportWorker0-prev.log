@@ -691,6 +691,72 @@ Received Import Request.
   artifactKey: Guid(d5134eeecd01b5b44905956b9c6399d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Prefabs/Enemies.prefab using Guid(d5134eeecd01b5b44905956b9c6399d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56be56692bc939636cb38b71b136a7c9') in 0.233017 seconds 
 ========================================================================
+Received Import Request.
+  Time since last request: 0.000319 seconds.
+  path: Assets/Materials/UniversalRenderPipelineAsset.asset
+  artifactKey: Guid(f7d59550701dda647a65276cde896b33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/UniversalRenderPipelineAsset.asset using Guid(f7d59550701dda647a65276cde896b33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91b5196c1c73ebab332833d3f6144869') in 0.010372 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000336 seconds.
+  path: Assets/Materials/trap.mat
+  artifactKey: Guid(306efcb9c0ae9654a852ddd05ff24c6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/trap.mat using Guid(306efcb9c0ae9654a852ddd05ff24c6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '707f29d503de05f2f993dfeb3f86f2d0') in 0.031489 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000213 seconds.
+  path: Assets/Materials/coin.mat
+  artifactKey: Guid(dcdf49d21967c3743837d771e9855858) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/coin.mat using Guid(dcdf49d21967c3743837d771e9855858) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2525edade611cc0c02cb2cd683f17e14') in 0.030291 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000251 seconds.
+  path: Assets/Materials/MV5BZDE2ZjIxYzUtZTJjYS00OWQ0LTk2NGEtMDliYmI3MzMwYjhkXkEyXkFqcGdeQWFsZWxvZw@@._V1_QL75_UX500_CR0,0,500,281_.jpg
+  artifactKey: Guid(9f3d5f902ab72784a8c7dfccceef2816) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/MV5BZDE2ZjIxYzUtZTJjYS00OWQ0LTk2NGEtMDliYmI3MzMwYjhkXkEyXkFqcGdeQWFsZWxvZw@@._V1_QL75_UX500_CR0,0,500,281_.jpg using Guid(9f3d5f902ab72784a8c7dfccceef2816) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d3f9946dc3baa1f21da42a52e596e6a') in 0.159401 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000233 seconds.
+  path: Assets/Materials/shrekfest-shrek-super-slam.png
+  artifactKey: Guid(35bdb375fa60260499c7af3fcc8dd697) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/shrekfest-shrek-super-slam.png using Guid(35bdb375fa60260499c7af3fcc8dd697) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '874b116f155332fc8f03196fbb060b83') in 0.017761 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000240 seconds.
+  path: Assets/Materials/spikeyspike.mat
+  artifactKey: Guid(2a9dbcefd20c39e40b01d5d6e86fcce2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/spikeyspike.mat using Guid(2a9dbcefd20c39e40b01d5d6e86fcce2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '450f9722c068e7f33f064119211b536e') in 0.017199 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000206 seconds.
+  path: Assets/Materials/playerDefault.mat
+  artifactKey: Guid(ee4b2c1d6801da74b8721d04d77e9ff2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/playerDefault.mat using Guid(ee4b2c1d6801da74b8721d04d77e9ff2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18e9fb8ff29c6d102233d9141373579a') in 0.016529 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000265 seconds.
+  path: Assets/Materials/enemyDefult.mat
+  artifactKey: Guid(a3c601dff9932e042b6d32e7ef2d6c5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/enemyDefult.mat using Guid(a3c601dff9932e042b6d32e7ef2d6c5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9a12f062493cbb08b951ce42f5f1ee6') in 0.015613 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000187 seconds.
+  path: Assets/Materials/UniversalRenderPipelineAsset_Renderer.asset
+  artifactKey: Guid(c1924fd0fb90c644a99b8087e55e188b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/UniversalRenderPipelineAsset_Renderer.asset using Guid(c1924fd0fb90c644a99b8087e55e188b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '695974fae8df05bff764da9005cadcb8') in 0.006438 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 244.402315 seconds.
+  path: Assets/Prefabs/coin.prefab
+  artifactKey: Guid(11a66c586d0d0924da74ef90bed87acc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/coin.prefab using Guid(11a66c586d0d0924da74ef90bed87acc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b716f269c82542e5cf5b631bef8e83c') in 0.102892 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000306 seconds.
+  path: Assets/Prefabs/Enemies.prefab
+  artifactKey: Guid(d5134eeecd01b5b44905956b9c6399d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enemies.prefab using Guid(d5134eeecd01b5b44905956b9c6399d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a9fff26644ce43ef606c536e084c6bb') in 0.024227 seconds 
+========================================================================
 Received Prepare
 Registering precompiled user dll's ...
 Registered in 0.002872 seconds.
@@ -749,6 +815,36 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
+Received Import Request.
+  Time since last request: 11.602435 seconds.
+  path: Assets/Prefabs/Enemies.prefab
+  artifactKey: Guid(d5134eeecd01b5b44905956b9c6399d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enemies.prefab using Guid(d5134eeecd01b5b44905956b9c6399d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92583c1b1fa31229195968b54459edb4') in 0.227883 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 147.042000 seconds.
+  path: Assets/Shaders/CalcAdditionalSpecular.shadersubgraph
+  artifactKey: Guid(4a5f7a0e9e175a243841356f78309613) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/CalcAdditionalSpecular.shadersubgraph using Guid(4a5f7a0e9e175a243841356f78309613) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a2ab74637aa86d44503d9ba9ab41b1c') in 0.024382 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000243 seconds.
+  path: Assets/Shaders/GetAdditionalLight.shadersubgraph
+  artifactKey: Guid(a99d49eab385e4f428117a7342de5ef3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/GetAdditionalLight.shadersubgraph using Guid(a99d49eab385e4f428117a7342de5ef3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5513814b114ae5f6842e901744ede1a') in 0.006648 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000282 seconds.
+  path: Assets/Shaders/GetMainLight.shadersubgraph
+  artifactKey: Guid(3565764353322bf4980d9612ae6c4692) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/GetMainLight.shadersubgraph using Guid(3565764353322bf4980d9612ae6c4692) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'afc03a14d9a0c7c0d16c89cdff1b5fe1') in 0.008375 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000322 seconds.
+  path: Assets/Shaders/CalcAddtitionalDiffuse.shadersubgraph
+  artifactKey: Guid(b318540b8264ca745b8ec3f6988aa056) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/CalcAddtitionalDiffuse.shadersubgraph using Guid(b318540b8264ca745b8ec3f6988aa056) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c3929e25848fed1b464dc2d02674b08') in 0.008021 seconds 
+========================================================================
 Received Prepare
 Registering precompiled user dll's ...
 Registered in 0.003026 seconds.
@@ -764,7 +860,7 @@ Domain Reload Profiling:
 	ReloadAssembly (1333ms)
 		BeginReloadAssembly (132ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
+			DisableScriptedObjects (7ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (40ms)
@@ -806,6 +902,12 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 389.392900 seconds.
+  path: Assets/0854-BS_1280x1280.jpg
+  artifactKey: Guid(ec4a822458a163046bb03dda78bcb2b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/0854-BS_1280x1280.jpg using Guid(ec4a822458a163046bb03dda78bcb2b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd3c69cc6f6cf329e722da7b9c74be58') in 0.043868 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
@@ -865,6 +967,24 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
+Received Import Request.
+  Time since last request: 302.656821 seconds.
+  path: Assets/Materials/club.mat
+  artifactKey: Guid(4eb6a77d3d87b4e43a6bcb2859dbe463) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/club.mat using Guid(4eb6a77d3d87b4e43a6bcb2859dbe463) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88e837791f5c68e7cadd4b647ef24ef9') in 0.168401 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000196 seconds.
+  path: Assets/Materials/trap.mat
+  artifactKey: Guid(306efcb9c0ae9654a852ddd05ff24c6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/trap.mat using Guid(306efcb9c0ae9654a852ddd05ff24c6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eef67081324b2b4f46be490ac5eaf7ec') in 0.016910 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000269 seconds.
+  path: Assets/Materials/enemyDefult.mat
+  artifactKey: Guid(a3c601dff9932e042b6d32e7ef2d6c5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/enemyDefult.mat using Guid(a3c601dff9932e042b6d32e7ef2d6c5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78227bd4f7b9c80b089c35574b4ff321') in 0.019191 seconds 
+========================================================================
 Received Prepare
 Registering precompiled user dll's ...
 Registered in 0.003033 seconds.
@@ -880,7 +1000,7 @@ Domain Reload Profiling:
 	ReloadAssembly (1343ms)
 		BeginReloadAssembly (134ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
+			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (49ms)
@@ -1322,7 +1442,7 @@ Domain Reload Profiling:
 	ReloadAssembly (1126ms)
 		BeginReloadAssembly (137ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
+			DisableScriptedObjects (9ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (38ms)
@@ -1515,7 +1635,7 @@ Domain Reload Profiling:
 			SetupLoadedEditorAssemblies (360ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (0ms)
+				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (1ms)
 				BeforeProcessingInitializeOnLoad (73ms)
 				ProcessInitializeOnLoadAttributes (271ms)
