@@ -25,13 +25,11 @@ public class EnemyControl : MonoBehaviour {
     public bool bungieInSightRange, bungieInAttackRange;
 
     //item drops stuff
-    //public GameObject drop; //coin GameObject
+    public GameObject drop; //coin GameObject
+
 
     //Player Health 
     ThirdPersonMovement TPM;
-    Vector3 pause;
-    bool stopped;
-    bool stopP2;
 
 
     void Start() {
@@ -42,7 +40,6 @@ public class EnemyControl : MonoBehaviour {
     private void Awake() {
         bungie = GameObject.Find("thirdPersonPlayer").transform;
         monster = GetComponent<NavMeshAgent>();
-        stopP2 = false;
     }
    
 
@@ -58,14 +55,8 @@ public class EnemyControl : MonoBehaviour {
 
     private void FixedUpdate() {
         if (enemyHealth == 0) Destroy(this.gameObject);
-        if (stopped == false && stopP2 == true) {
-            pause = bungie.position;
-            Debug.Log("GetPause");
-            stopped = true;
-            } else if (stopped == true && stopP2 == true) {
-                bungie.position = pause;
-                Debug.Log("Paused" + pause);
-            }
+
+        //
     }
     
     private void Wander() {
@@ -104,22 +95,13 @@ public class EnemyControl : MonoBehaviour {
             alreadyAttacked = true;
             Invoke(nameof(ResetAttack), timeBetweenAttacks);
         }
-
-        //if health is less than or equal to 0, stop movement
-        if (TPM.bungieHP <= 0) {
-            Debug.Log("You Died");
-            //SceneManager.LoadScene("SampleScene", LoadSceneMode.Single);
-            stopped = false;
-            stopP2 = true;
-
-        }
     }
     private void ResetAttack() {
         alreadyAttacked = false;
     }
 
     //when enemy gets destroyed it becomes a coin
-    /*private void OnDestroy() {
+    private void OnDestroy() {
         Instantiate(drop, transform.position, drop.transform.rotation);
-    }*/
+    }
 }

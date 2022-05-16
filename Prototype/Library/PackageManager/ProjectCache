@@ -1,20 +1,20 @@
 m_ProjectFiles:
   m_ManifestFileStatus:
-    m_FilePath: C:/Unity Projects/Russell Ellis/Prototype2/Prototype/Packages/manifest.json
+    m_FilePath: E:/Unity Projects/Amy Paulsen/Protoype/Prototype/Packages/manifest.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637874514615976247
-    m_Hash: 4100874547
+      ticks: 637872819933267975
+    m_Hash: 712045115
   m_LockFileStatus:
-    m_FilePath: C:/Unity Projects/Russell Ellis/Prototype2/Prototype/Packages/packages-lock.json
+    m_FilePath: E:/Unity Projects/Amy Paulsen/Protoype/Prototype/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637874514615986216
-    m_Hash: 1489414555
+      ticks: 637872819933424128
+    m_Hash: 2593622955
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:
@@ -25,7 +25,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 2.6.11
       source: 1
-      resolvedPath: C:\Unity Projects\Russell Ellis\Prototype2\Prototype\Library\PackageCache\com.unity.cinemachine@2.6.11
+      resolvedPath: E:\Unity Projects\Amy Paulsen\Protoype\Prototype\Library\PackageCache\com.unity.cinemachine@2.6.11
       assetPath: Packages/com.unity.cinemachine
       name: com.unity.cinemachine
       displayName: Cinemachine
@@ -184,7 +184,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.15.15
       source: 1
-      resolvedPath: C:\Unity Projects\Russell Ellis\Prototype2\Prototype\Library\PackageCache\com.unity.collab-proxy@1.15.15
+      resolvedPath: E:\Unity Projects\Amy Paulsen\Protoype\Prototype\Library\PackageCache\com.unity.collab-proxy@1.15.15
       assetPath: Packages/com.unity.collab-proxy
       name: com.unity.collab-proxy
       displayName: Version Control
@@ -237,6 +237,7 @@ m_PackageAssets:
         - 1.14.13
         - 1.14.15
         - 1.14.16
+        - 1.14.17
         - 1.15.1
         - 1.15.4
         - 1.15.7
@@ -245,6 +246,7 @@ m_PackageAssets:
         - 1.15.13
         - 1.15.15
         - 1.15.16
+        - 1.15.17
         - 2.0.0-preview.6
         - 2.0.0-preview.8
         - 2.0.0-preview.15
@@ -258,6 +260,7 @@ m_PackageAssets:
         compatible:
         - 1.15.15
         - 1.15.16
+        - 1.15.17
         - 2.0.0-preview.6
         - 2.0.0-preview.8
         - 2.0.0-preview.15
@@ -268,7 +271,7 @@ m_PackageAssets:
         - 2.1.0-preview.3
         - 2.1.0-preview.5
         - 2.1.0-preview.6
-        verified: 1.15.16
+        verified: 1.15.17
       dependencies:
       - name: com.unity.services.core
         version: 1.0.1
@@ -316,7 +319,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 2.0.7
       source: 1
-      resolvedPath: C:\Unity Projects\Russell Ellis\Prototype2\Prototype\Library\PackageCache\com.unity.ide.rider@2.0.7
+      resolvedPath: E:\Unity Projects\Amy Paulsen\Protoype\Prototype\Library\PackageCache\com.unity.ide.rider@2.0.7
       assetPath: Packages/com.unity.ide.rider
       name: com.unity.ide.rider
       displayName: JetBrains Rider Editor
@@ -433,7 +436,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 2.0.14
       source: 1
-      resolvedPath: C:\Unity Projects\Russell Ellis\Prototype2\Prototype\Library\PackageCache\com.unity.ide.visualstudio@2.0.14
+      resolvedPath: E:\Unity Projects\Amy Paulsen\Protoype\Prototype\Library\PackageCache\com.unity.ide.visualstudio@2.0.14
       assetPath: Packages/com.unity.ide.visualstudio
       name: com.unity.ide.visualstudio
       displayName: Visual Studio Editor
@@ -526,7 +529,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.2.5
       source: 1
-      resolvedPath: C:\Unity Projects\Russell Ellis\Prototype2\Prototype\Library\PackageCache\com.unity.ide.vscode@1.2.5
+      resolvedPath: E:\Unity Projects\Amy Paulsen\Protoype\Prototype\Library\PackageCache\com.unity.ide.vscode@1.2.5
       assetPath: Packages/com.unity.ide.vscode
       name: com.unity.ide.vscode
       displayName: Visual Studio Code Editor
@@ -599,7 +602,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.3.0
       source: 1
-      resolvedPath: C:\Unity Projects\Russell Ellis\Prototype2\Prototype\Library\PackageCache\com.unity.inputsystem@1.3.0
+      resolvedPath: E:\Unity Projects\Amy Paulsen\Protoype\Prototype\Library\PackageCache\com.unity.inputsystem@1.3.0
       assetPath: Packages/com.unity.inputsystem
       name: com.unity.inputsystem
       displayName: Input System
@@ -729,7 +732,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 4.5.2
       source: 1
-      resolvedPath: C:\Unity Projects\Russell Ellis\Prototype2\Prototype\Library\PackageCache\com.unity.probuilder@4.5.2
+      resolvedPath: E:\Unity Projects\Amy Paulsen\Protoype\Prototype\Library\PackageCache\com.unity.probuilder@4.5.2
       assetPath: Packages/com.unity.probuilder
       name: com.unity.probuilder
       displayName: ProBuilder
@@ -871,7 +874,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 10.8.1
       source: 1
-      resolvedPath: C:\Unity Projects\Russell Ellis\Prototype2\Prototype\Library\PackageCache\com.unity.render-pipelines.universal@10.8.1
+      resolvedPath: E:\Unity Projects\Amy Paulsen\Protoype\Prototype\Library\PackageCache\com.unity.render-pipelines.universal@10.8.1
       assetPath: Packages/com.unity.render-pipelines.universal
       name: com.unity.render-pipelines.universal
       displayName: Universal RP
@@ -994,7 +997,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.1.31
       source: 1
-      resolvedPath: C:\Unity Projects\Russell Ellis\Prototype2\Prototype\Library\PackageCache\com.unity.test-framework@1.1.31
+      resolvedPath: E:\Unity Projects\Amy Paulsen\Protoype\Prototype\Library\PackageCache\com.unity.test-framework@1.1.31
       assetPath: Packages/com.unity.test-framework
       name: com.unity.test-framework
       displayName: Test Framework
@@ -1093,7 +1096,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 3.0.6
       source: 1
-      resolvedPath: C:\Unity Projects\Russell Ellis\Prototype2\Prototype\Library\PackageCache\com.unity.textmeshpro@3.0.6
+      resolvedPath: E:\Unity Projects\Amy Paulsen\Protoype\Prototype\Library\PackageCache\com.unity.textmeshpro@3.0.6
       assetPath: Packages/com.unity.textmeshpro
       name: com.unity.textmeshpro
       displayName: TextMeshPro
@@ -1259,7 +1262,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.4.8
       source: 1
-      resolvedPath: C:\Unity Projects\Russell Ellis\Prototype2\Prototype\Library\PackageCache\com.unity.timeline@1.4.8
+      resolvedPath: E:\Unity Projects\Amy Paulsen\Protoype\Prototype\Library\PackageCache\com.unity.timeline@1.4.8
       assetPath: Packages/com.unity.timeline
       name: com.unity.timeline
       displayName: Timeline
@@ -1425,7 +1428,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Unity Projects\Russell Ellis\Prototype2\Prototype\Library\PackageCache\com.unity.ugui@1.0.0
+      resolvedPath: E:\Unity Projects\Amy Paulsen\Protoype\Prototype\Library\PackageCache\com.unity.ugui@1.0.0
       assetPath: Packages/com.unity.ugui
       name: com.unity.ugui
       displayName: Unity UI
@@ -1488,7 +1491,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Unity Projects\Russell Ellis\Prototype2\Prototype\Library\PackageCache\com.unity.modules.ai@1.0.0
+      resolvedPath: E:\Unity Projects\Amy Paulsen\Protoype\Prototype\Library\PackageCache\com.unity.modules.ai@1.0.0
       assetPath: Packages/com.unity.modules.ai
       name: com.unity.modules.ai
       displayName: AI
@@ -1536,7 +1539,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Unity Projects\Russell Ellis\Prototype2\Prototype\Library\PackageCache\com.unity.modules.androidjni@1.0.0
+      resolvedPath: E:\Unity Projects\Amy Paulsen\Protoype\Prototype\Library\PackageCache\com.unity.modules.androidjni@1.0.0
       assetPath: Packages/com.unity.modules.androidjni
       name: com.unity.modules.androidjni
       displayName: Android JNI
@@ -1584,7 +1587,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Unity Projects\Russell Ellis\Prototype2\Prototype\Library\PackageCache\com.unity.modules.animation@1.0.0
+      resolvedPath: E:\Unity Projects\Amy Paulsen\Protoype\Prototype\Library\PackageCache\com.unity.modules.animation@1.0.0
       assetPath: Packages/com.unity.modules.animation
       name: com.unity.modules.animation
       displayName: Animation
@@ -1632,7 +1635,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Unity Projects\Russell Ellis\Prototype2\Prototype\Library\PackageCache\com.unity.modules.assetbundle@1.0.0
+      resolvedPath: E:\Unity Projects\Amy Paulsen\Protoype\Prototype\Library\PackageCache\com.unity.modules.assetbundle@1.0.0
       assetPath: Packages/com.unity.modules.assetbundle
       name: com.unity.modules.assetbundle
       displayName: Asset Bundle
@@ -1680,7 +1683,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Unity Projects\Russell Ellis\Prototype2\Prototype\Library\PackageCache\com.unity.modules.audio@1.0.0
+      resolvedPath: E:\Unity Projects\Amy Paulsen\Protoype\Prototype\Library\PackageCache\com.unity.modules.audio@1.0.0
       assetPath: Packages/com.unity.modules.audio
       name: com.unity.modules.audio
       displayName: Audio
@@ -1728,7 +1731,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Unity Projects\Russell Ellis\Prototype2\Prototype\Library\PackageCache\com.unity.modules.cloth@1.0.0
+      resolvedPath: E:\Unity Projects\Amy Paulsen\Protoype\Prototype\Library\PackageCache\com.unity.modules.cloth@1.0.0
       assetPath: Packages/com.unity.modules.cloth
       name: com.unity.modules.cloth
       displayName: Cloth
@@ -1780,7 +1783,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Unity Projects\Russell Ellis\Prototype2\Prototype\Library\PackageCache\com.unity.modules.director@1.0.0
+      resolvedPath: E:\Unity Projects\Amy Paulsen\Protoype\Prototype\Library\PackageCache\com.unity.modules.director@1.0.0
       assetPath: Packages/com.unity.modules.director
       name: com.unity.modules.director
       displayName: Director
@@ -1836,7 +1839,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Unity Projects\Russell Ellis\Prototype2\Prototype\Library\PackageCache\com.unity.modules.imageconversion@1.0.0
+      resolvedPath: E:\Unity Projects\Amy Paulsen\Protoype\Prototype\Library\PackageCache\com.unity.modules.imageconversion@1.0.0
       assetPath: Packages/com.unity.modules.imageconversion
       name: com.unity.modules.imageconversion
       displayName: Image Conversion
@@ -1885,7 +1888,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Unity Projects\Russell Ellis\Prototype2\Prototype\Library\PackageCache\com.unity.modules.imgui@1.0.0
+      resolvedPath: E:\Unity Projects\Amy Paulsen\Protoype\Prototype\Library\PackageCache\com.unity.modules.imgui@1.0.0
       assetPath: Packages/com.unity.modules.imgui
       name: com.unity.modules.imgui
       displayName: IMGUI
@@ -1933,7 +1936,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Unity Projects\Russell Ellis\Prototype2\Prototype\Library\PackageCache\com.unity.modules.jsonserialize@1.0.0
+      resolvedPath: E:\Unity Projects\Amy Paulsen\Protoype\Prototype\Library\PackageCache\com.unity.modules.jsonserialize@1.0.0
       assetPath: Packages/com.unity.modules.jsonserialize
       name: com.unity.modules.jsonserialize
       displayName: JSONSerialize
@@ -1981,7 +1984,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Unity Projects\Russell Ellis\Prototype2\Prototype\Library\PackageCache\com.unity.modules.particlesystem@1.0.0
+      resolvedPath: E:\Unity Projects\Amy Paulsen\Protoype\Prototype\Library\PackageCache\com.unity.modules.particlesystem@1.0.0
       assetPath: Packages/com.unity.modules.particlesystem
       name: com.unity.modules.particlesystem
       displayName: Particle System
@@ -2029,7 +2032,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Unity Projects\Russell Ellis\Prototype2\Prototype\Library\PackageCache\com.unity.modules.physics@1.0.0
+      resolvedPath: E:\Unity Projects\Amy Paulsen\Protoype\Prototype\Library\PackageCache\com.unity.modules.physics@1.0.0
       assetPath: Packages/com.unity.modules.physics
       name: com.unity.modules.physics
       displayName: Physics
@@ -2077,7 +2080,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Unity Projects\Russell Ellis\Prototype2\Prototype\Library\PackageCache\com.unity.modules.physics2d@1.0.0
+      resolvedPath: E:\Unity Projects\Amy Paulsen\Protoype\Prototype\Library\PackageCache\com.unity.modules.physics2d@1.0.0
       assetPath: Packages/com.unity.modules.physics2d
       name: com.unity.modules.physics2d
       displayName: Physics 2D
@@ -2125,7 +2128,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Unity Projects\Russell Ellis\Prototype2\Prototype\Library\PackageCache\com.unity.modules.screencapture@1.0.0
+      resolvedPath: E:\Unity Projects\Amy Paulsen\Protoype\Prototype\Library\PackageCache\com.unity.modules.screencapture@1.0.0
       assetPath: Packages/com.unity.modules.screencapture
       name: com.unity.modules.screencapture
       displayName: Screen Capture
@@ -2177,7 +2180,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Unity Projects\Russell Ellis\Prototype2\Prototype\Library\PackageCache\com.unity.modules.terrain@1.0.0
+      resolvedPath: E:\Unity Projects\Amy Paulsen\Protoype\Prototype\Library\PackageCache\com.unity.modules.terrain@1.0.0
       assetPath: Packages/com.unity.modules.terrain
       name: com.unity.modules.terrain
       displayName: Terrain
@@ -2225,7 +2228,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Unity Projects\Russell Ellis\Prototype2\Prototype\Library\PackageCache\com.unity.modules.terrainphysics@1.0.0
+      resolvedPath: E:\Unity Projects\Amy Paulsen\Protoype\Prototype\Library\PackageCache\com.unity.modules.terrainphysics@1.0.0
       assetPath: Packages/com.unity.modules.terrainphysics
       name: com.unity.modules.terrainphysics
       displayName: Terrain Physics
@@ -2281,7 +2284,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Unity Projects\Russell Ellis\Prototype2\Prototype\Library\PackageCache\com.unity.modules.tilemap@1.0.0
+      resolvedPath: E:\Unity Projects\Amy Paulsen\Protoype\Prototype\Library\PackageCache\com.unity.modules.tilemap@1.0.0
       assetPath: Packages/com.unity.modules.tilemap
       name: com.unity.modules.tilemap
       displayName: Tilemap
@@ -2333,7 +2336,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Unity Projects\Russell Ellis\Prototype2\Prototype\Library\PackageCache\com.unity.modules.ui@1.0.0
+      resolvedPath: E:\Unity Projects\Amy Paulsen\Protoype\Prototype\Library\PackageCache\com.unity.modules.ui@1.0.0
       assetPath: Packages/com.unity.modules.ui
       name: com.unity.modules.ui
       displayName: UI
@@ -2381,7 +2384,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Unity Projects\Russell Ellis\Prototype2\Prototype\Library\PackageCache\com.unity.modules.uielements@1.0.0
+      resolvedPath: E:\Unity Projects\Amy Paulsen\Protoype\Prototype\Library\PackageCache\com.unity.modules.uielements@1.0.0
       assetPath: Packages/com.unity.modules.uielements
       name: com.unity.modules.uielements
       displayName: UIElements
@@ -2445,7 +2448,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Unity Projects\Russell Ellis\Prototype2\Prototype\Library\PackageCache\com.unity.modules.umbra@1.0.0
+      resolvedPath: E:\Unity Projects\Amy Paulsen\Protoype\Prototype\Library\PackageCache\com.unity.modules.umbra@1.0.0
       assetPath: Packages/com.unity.modules.umbra
       name: com.unity.modules.umbra
       displayName: Umbra
@@ -2493,7 +2496,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Unity Projects\Russell Ellis\Prototype2\Prototype\Library\PackageCache\com.unity.modules.unityanalytics@1.0.0
+      resolvedPath: E:\Unity Projects\Amy Paulsen\Protoype\Prototype\Library\PackageCache\com.unity.modules.unityanalytics@1.0.0
       assetPath: Packages/com.unity.modules.unityanalytics
       name: com.unity.modules.unityanalytics
       displayName: Unity Analytics
@@ -2549,7 +2552,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Unity Projects\Russell Ellis\Prototype2\Prototype\Library\PackageCache\com.unity.modules.unitywebrequest@1.0.0
+      resolvedPath: E:\Unity Projects\Amy Paulsen\Protoype\Prototype\Library\PackageCache\com.unity.modules.unitywebrequest@1.0.0
       assetPath: Packages/com.unity.modules.unitywebrequest
       name: com.unity.modules.unitywebrequest
       displayName: Unity Web Request
@@ -2597,7 +2600,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Unity Projects\Russell Ellis\Prototype2\Prototype\Library\PackageCache\com.unity.modules.unitywebrequestassetbundle@1.0.0
+      resolvedPath: E:\Unity Projects\Amy Paulsen\Protoype\Prototype\Library\PackageCache\com.unity.modules.unitywebrequestassetbundle@1.0.0
       assetPath: Packages/com.unity.modules.unitywebrequestassetbundle
       name: com.unity.modules.unitywebrequestassetbundle
       displayName: Unity Web Request Asset Bundle
@@ -2653,7 +2656,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Unity Projects\Russell Ellis\Prototype2\Prototype\Library\PackageCache\com.unity.modules.unitywebrequestaudio@1.0.0
+      resolvedPath: E:\Unity Projects\Amy Paulsen\Protoype\Prototype\Library\PackageCache\com.unity.modules.unitywebrequestaudio@1.0.0
       assetPath: Packages/com.unity.modules.unitywebrequestaudio
       name: com.unity.modules.unitywebrequestaudio
       displayName: Unity Web Request Audio
@@ -2709,7 +2712,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Unity Projects\Russell Ellis\Prototype2\Prototype\Library\PackageCache\com.unity.modules.unitywebrequesttexture@1.0.0
+      resolvedPath: E:\Unity Projects\Amy Paulsen\Protoype\Prototype\Library\PackageCache\com.unity.modules.unitywebrequesttexture@1.0.0
       assetPath: Packages/com.unity.modules.unitywebrequesttexture
       name: com.unity.modules.unitywebrequesttexture
       displayName: Unity Web Request Texture
@@ -2765,7 +2768,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Unity Projects\Russell Ellis\Prototype2\Prototype\Library\PackageCache\com.unity.modules.unitywebrequestwww@1.0.0
+      resolvedPath: E:\Unity Projects\Amy Paulsen\Protoype\Prototype\Library\PackageCache\com.unity.modules.unitywebrequestwww@1.0.0
       assetPath: Packages/com.unity.modules.unitywebrequestwww
       name: com.unity.modules.unitywebrequestwww
       displayName: Unity Web Request WWW
@@ -2837,7 +2840,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Unity Projects\Russell Ellis\Prototype2\Prototype\Library\PackageCache\com.unity.modules.vehicles@1.0.0
+      resolvedPath: E:\Unity Projects\Amy Paulsen\Protoype\Prototype\Library\PackageCache\com.unity.modules.vehicles@1.0.0
       assetPath: Packages/com.unity.modules.vehicles
       name: com.unity.modules.vehicles
       displayName: Vehicles
@@ -2889,7 +2892,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Unity Projects\Russell Ellis\Prototype2\Prototype\Library\PackageCache\com.unity.modules.video@1.0.0
+      resolvedPath: E:\Unity Projects\Amy Paulsen\Protoype\Prototype\Library\PackageCache\com.unity.modules.video@1.0.0
       assetPath: Packages/com.unity.modules.video
       name: com.unity.modules.video
       displayName: Video
@@ -2949,7 +2952,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Unity Projects\Russell Ellis\Prototype2\Prototype\Library\PackageCache\com.unity.modules.vr@1.0.0
+      resolvedPath: E:\Unity Projects\Amy Paulsen\Protoype\Prototype\Library\PackageCache\com.unity.modules.vr@1.0.0
       assetPath: Packages/com.unity.modules.vr
       name: com.unity.modules.vr
       displayName: VR
@@ -3011,7 +3014,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Unity Projects\Russell Ellis\Prototype2\Prototype\Library\PackageCache\com.unity.modules.wind@1.0.0
+      resolvedPath: E:\Unity Projects\Amy Paulsen\Protoype\Prototype\Library\PackageCache\com.unity.modules.wind@1.0.0
       assetPath: Packages/com.unity.modules.wind
       name: com.unity.modules.wind
       displayName: Wind
@@ -3059,7 +3062,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Unity Projects\Russell Ellis\Prototype2\Prototype\Library\PackageCache\com.unity.modules.xr@1.0.0
+      resolvedPath: E:\Unity Projects\Amy Paulsen\Protoype\Prototype\Library\PackageCache\com.unity.modules.xr@1.0.0
       assetPath: Packages/com.unity.modules.xr
       name: com.unity.modules.xr
       displayName: XR
@@ -3119,7 +3122,7 @@ m_PackageAssets:
       isDirectDependency: 0
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Unity Projects\Russell Ellis\Prototype2\Prototype\Library\PackageCache\com.unity.modules.subsystems@1.0.0
+      resolvedPath: E:\Unity Projects\Amy Paulsen\Protoype\Prototype\Library\PackageCache\com.unity.modules.subsystems@1.0.0
       assetPath: Packages/com.unity.modules.subsystems
       name: com.unity.modules.subsystems
       displayName: Subsystems
@@ -3171,7 +3174,7 @@ m_PackageAssets:
       isDirectDependency: 0
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Unity Projects\Russell Ellis\Prototype2\Prototype\Library\PackageCache\com.unity.modules.uielementsnative@1.0.0
+      resolvedPath: E:\Unity Projects\Amy Paulsen\Protoype\Prototype\Library\PackageCache\com.unity.modules.uielementsnative@1.0.0
       assetPath: Packages/com.unity.modules.uielementsnative
       name: com.unity.modules.uielementsnative
       displayName: UIElements Native
@@ -3230,7 +3233,7 @@ m_PackageAssets:
       isDirectDependency: 0
       version: 1.0.6
       source: 1
-      resolvedPath: C:\Unity Projects\Russell Ellis\Prototype2\Prototype\Library\PackageCache\com.unity.ext.nunit@1.0.6
+      resolvedPath: E:\Unity Projects\Amy Paulsen\Protoype\Prototype\Library\PackageCache\com.unity.ext.nunit@1.0.6
       assetPath: Packages/com.unity.ext.nunit
       name: com.unity.ext.nunit
       displayName: Custom NUnit
@@ -3293,7 +3296,7 @@ m_PackageAssets:
       isDirectDependency: 0
       version: 1.1.0
       source: 1
-      resolvedPath: C:\Unity Projects\Russell Ellis\Prototype2\Prototype\Library\PackageCache\com.unity.mathematics@1.1.0
+      resolvedPath: E:\Unity Projects\Amy Paulsen\Protoype\Prototype\Library\PackageCache\com.unity.mathematics@1.1.0
       assetPath: Packages/com.unity.mathematics
       name: com.unity.mathematics
       displayName: Mathematics
@@ -3309,13 +3312,39 @@ m_PackageAssets:
       errors: []
       versions:
         all:
+        - 0.0.12-preview.2
+        - 0.0.12-preview.5
+        - 0.0.12-preview.8
+        - 0.0.12-preview.10
+        - 0.0.12-preview.11
+        - 0.0.12-preview.13
+        - 0.0.12-preview.17
+        - 0.0.12-preview.19
+        - 0.0.12-preview.20
+        - 1.0.0-preview.1
+        - 1.0.1
+        - 1.1.0-preview.1
         - 1.1.0
         - 1.2.1
+        - 1.2.4
         - 1.2.5
         - 1.2.6
         compatible:
+        - 0.0.12-preview.2
+        - 0.0.12-preview.5
+        - 0.0.12-preview.8
+        - 0.0.12-preview.10
+        - 0.0.12-preview.11
+        - 0.0.12-preview.13
+        - 0.0.12-preview.17
+        - 0.0.12-preview.19
+        - 0.0.12-preview.20
+        - 1.0.0-preview.1
+        - 1.0.1
+        - 1.1.0-preview.1
         - 1.1.0
         - 1.2.1
+        - 1.2.4
         - 1.2.5
         - 1.2.6
         verified: 1.2.6
@@ -3335,7 +3364,7 @@ m_PackageAssets:
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
-      datePublishedTicks: 0
+      datePublishedTicks: 636984649280000000
       documentationUrl: 
       hasRepository: 1
       repository:
@@ -3348,7 +3377,7 @@ m_PackageAssets:
       isDirectDependency: 0
       version: 10.8.1
       source: 1
-      resolvedPath: C:\Unity Projects\Russell Ellis\Prototype2\Prototype\Library\PackageCache\com.unity.render-pipelines.core@10.8.1
+      resolvedPath: E:\Unity Projects\Amy Paulsen\Protoype\Prototype\Library\PackageCache\com.unity.render-pipelines.core@10.8.1
       assetPath: Packages/com.unity.render-pipelines.core
       name: com.unity.render-pipelines.core
       displayName: Core RP Library
@@ -3513,7 +3542,7 @@ m_PackageAssets:
       isDirectDependency: 0
       version: 10.8.1
       source: 1
-      resolvedPath: C:\Unity Projects\Russell Ellis\Prototype2\Prototype\Library\PackageCache\com.unity.shadergraph@10.8.1
+      resolvedPath: E:\Unity Projects\Amy Paulsen\Protoype\Prototype\Library\PackageCache\com.unity.shadergraph@10.8.1
       assetPath: Packages/com.unity.shadergraph
       name: com.unity.shadergraph
       displayName: Shader Graph
@@ -3677,7 +3706,7 @@ m_PackageAssets:
       isDirectDependency: 0
       version: 1.0.3
       source: 1
-      resolvedPath: C:\Unity Projects\Russell Ellis\Prototype2\Prototype\Library\PackageCache\com.unity.settings-manager@1.0.3
+      resolvedPath: E:\Unity Projects\Amy Paulsen\Protoype\Prototype\Library\PackageCache\com.unity.settings-manager@1.0.3
       assetPath: Packages/com.unity.settings-manager
       name: com.unity.settings-manager
       displayName: Settings Manager
@@ -3739,7 +3768,7 @@ m_PackageAssets:
       isDirectDependency: 0
       version: 1.0.1
       source: 1
-      resolvedPath: C:\Unity Projects\Russell Ellis\Prototype2\Prototype\Library\PackageCache\com.unity.services.core@1.0.1
+      resolvedPath: E:\Unity Projects\Amy Paulsen\Protoype\Prototype\Library\PackageCache\com.unity.services.core@1.0.1
       assetPath: Packages/com.unity.services.core
       name: com.unity.services.core
       displayName: Services Core
@@ -3769,6 +3798,7 @@ m_PackageAssets:
         - 1.2.0
         - 1.3.1
         - 1.3.2
+        - 1.4.0
         compatible:
         - 1.0.1
         - 1.1.0-pre.7
@@ -3781,6 +3811,7 @@ m_PackageAssets:
         - 1.2.0
         - 1.3.1
         - 1.3.2
+        - 1.4.0
         verified: 1.0.1
       dependencies:
       - name: com.unity.modules.unitywebrequest
@@ -3814,7 +3845,7 @@ m_PackageAssets:
       isDirectDependency: 0
       version: 4.3.2
       source: 1
-      resolvedPath: C:\Unity Projects\Russell Ellis\Prototype2\Prototype\Library\PackageCache\com.unity.searcher@4.3.2
+      resolvedPath: E:\Unity Projects\Amy Paulsen\Protoype\Prototype\Library\PackageCache\com.unity.searcher@4.3.2
       assetPath: Packages/com.unity.searcher
       name: com.unity.searcher
       displayName: Searcher
@@ -3830,12 +3861,34 @@ m_PackageAssets:
       errors: []
       versions:
         all:
+        - 4.0.0-preview
+        - 4.0.0
+        - 4.0.7-preview
+        - 4.0.7
+        - 4.0.8-preview
+        - 4.0.9
+        - 4.1.0-preview
+        - 4.1.0
+        - 4.2.0
+        - 4.3.0
+        - 4.3.1
         - 4.3.2
         - 4.6.0-preview
         - 4.7.0-preview
         - 4.9.1
         - 4.9.2
         compatible:
+        - 4.0.0-preview
+        - 4.0.0
+        - 4.0.7-preview
+        - 4.0.7
+        - 4.0.8-preview
+        - 4.0.9
+        - 4.1.0-preview
+        - 4.1.0
+        - 4.2.0
+        - 4.3.0
+        - 4.3.1
         - 4.3.2
         - 4.6.0-preview
         - 4.7.0-preview
@@ -3859,7 +3912,7 @@ m_PackageAssets:
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
-      datePublishedTicks: 0
+      datePublishedTicks: 637509898070000000
       documentationUrl: 
       hasRepository: 1
       repository:
@@ -3869,5 +3922,5 @@ m_PackageAssets:
         path: 
   m_LocalPackages:
     m_LocalFileStatus: []
-m_ProjectPath: C:/Unity Projects/Russell Ellis/Prototype2/Prototype/Packages
+m_ProjectPath: E:/Unity Projects/Amy Paulsen/Protoype/Prototype/Packages
 m_EditorVersion: 2020.3.33f1 (915a7af8b0d5)
