@@ -577,7 +577,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 578273181}
-  m_LocalRotation: {x: 0.006208489, y: 0.000000017208151, z: -1.06838684e-10, w: 0.99998075}
+  m_LocalRotation: {x: 0.0062084883, y: 0.000000017208151, z: -1.0683866e-10, w: 0.99998075}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -826,7 +826,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 740788375}
-  m_LocalRotation: {x: 0.032207835, y: 0.000000017355964, z: -5.592882e-10, w: 0.9994812}
+  m_LocalRotation: {x: 0.03220784, y: -0.000000017197454, z: 5.541803e-10, w: 0.9994812}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -912,7 +912,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.0062084827, y: 0.00000001742933, z: -1.0547805e-10, w: 0.99998075}
+  m_LocalRotation: {x: 0.0062084827, y: 0.000000017548187, z: -1.0473783e-10, w: 0.99998075}
   m_LocalPosition: {x: 14.85, y: 4, z: -26}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -1687,7 +1687,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1978186534}
-  m_LocalRotation: {x: -0.019655146, y: -0.0000000018622853, z: -3.6610562e-11, w: 0.9998068}
+  m_LocalRotation: {x: -0.019655146, y: 0.0000000018622855, z: 3.6610565e-11, w: 0.9998068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -1893,6 +1893,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7107816904114634175, guid: d5134eeecd01b5b44905956b9c6399d4, type: 3}
+      propertyPath: m_TagString
+      value: monster
+      objectReference: {fileID: 0}
     - target: {fileID: 7107816904701422105, guid: d5134eeecd01b5b44905956b9c6399d4, type: 3}
       propertyPath: m_Name
       value: Enemies

@@ -31,6 +31,7 @@ public class EnemyControl : MonoBehaviour {
     ThirdPersonMovement TPM;
     Vector3 pause;
     bool stopped;
+    bool stopP2;
 
 
     void Start() {
@@ -41,6 +42,7 @@ public class EnemyControl : MonoBehaviour {
     private void Awake() {
         bungie = GameObject.Find("thirdPersonPlayer").transform;
         monster = GetComponent<NavMeshAgent>();
+        stopP2 = false;
     }
    
 
@@ -56,6 +58,14 @@ public class EnemyControl : MonoBehaviour {
 
     private void FixedUpdate() {
         if (enemyHealth == 0) Destroy(this.gameObject);
+        if (stopped == false && stopP2 == true) {
+            pause = bungie.position;
+            Debug.Log("GetPause");
+            stopped = true;
+            } else if (stopped == true && stopP2 == true) {
+                bungie.position = pause;
+                Debug.Log("Paused" + pause);
+            }
     }
     
     private void Wander() {
@@ -99,13 +109,8 @@ public class EnemyControl : MonoBehaviour {
         if (TPM.bungieHP <= 0) {
             Debug.Log("You Died");
             //SceneManager.LoadScene("SampleScene", LoadSceneMode.Single);
-            
-            if (stopped != true) {
-            pause = bungie.position;
-            stopped = true;
-            } else {
-                bungie.position = pause;
-            }
+            stopped = false;
+            stopP2 = true;
 
         }
     }

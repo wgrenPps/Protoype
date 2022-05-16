@@ -45,15 +45,16 @@ public class ThirdPersonMovement : MonoBehaviour {
         }
         playerVelocity.y += gravityValue * Time.deltaTime;
         controller.Move(playerVelocity * Time.deltaTime);
-    
+    /*
         GameObject[] Enemies;
         Enemies = GameObject.FindGameObjectsWithTag("Bad");
         Debug.Log(Enemies.Length);
         for(var o = 0; o < Enemies.Length; o ++) {
             EnemyControl bungieInAttackRange = Enemies[o].GetComponent<EnemyControl>(); //aquiring attack range from other script
             if (bungieInAttackRange.bungieInAttackRange == true) {
-                bungieHP--;
+                //bungieHP--;
             }
         }
+        */
     }
 }

@@ -12,7 +12,7 @@ public class destroyEnemies : MonoBehaviour {
     EnemyControl HP;
 
     void OnTriggerEnter(Collider other) {
-        if (other.CompareTag("Bad")) { 
+        if (other.CompareTag("monster")) { 
         merph = anchor.transform.rotation.eulerAngles;
         hit = true; // gets hit
         HP = other.transform.parent.GetComponent<EnemyControl>(); //aquiring health from other script
