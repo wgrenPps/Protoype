@@ -8,7 +8,7 @@ public class big_collide : MonoBehaviour
     public GameObject trapSpike;
     public GameObject player;
 
-    private Health helth;
+    private HealthTrack helth;
     private bool spikesActive = false;
     private bool collided = false;
     private bool stabbed = false;
@@ -18,7 +18,7 @@ public class big_collide : MonoBehaviour
     void Start() {
         trapSpike.SetActive(false);
         cooldown = 0f;
-        helth = player.GetComponent<Health>();
+        helth = player.GetComponent<HealthTrack>();
     }
     void OnTriggerEnter(Collider other)
     {
