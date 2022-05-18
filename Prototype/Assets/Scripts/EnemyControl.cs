@@ -25,7 +25,7 @@ public class EnemyControl : MonoBehaviour {
     public bool bungieInSightRange, bungieInAttackRange;
 
     //item drops stuff
-    public GameObject drop; //coin GameObject
+    //public GameObject drop; //coin GameObject
 
 
     //Player Health 
@@ -55,8 +55,6 @@ public class EnemyControl : MonoBehaviour {
 
     private void FixedUpdate() {
         if (enemyHealth == 0) Destroy(this.gameObject);
-
-        //
     }
     
     private void Wander() {
@@ -101,7 +99,7 @@ public class EnemyControl : MonoBehaviour {
     }
 
     //when enemy gets destroyed it becomes a coin
-    private void OnDestroy() {
+    /*private void OnDestroy() {
         Instantiate(drop, transform.position, drop.transform.rotation);
-    }
+    }*/
 }

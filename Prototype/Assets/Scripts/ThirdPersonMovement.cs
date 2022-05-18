@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class ThirdPersonMovement : MonoBehaviour {
     public Transform Bungie;
@@ -21,9 +23,13 @@ public class ThirdPersonMovement : MonoBehaviour {
 
     //Player Health
     public int bungieHP;
-
-
     bool pause;
+
+    Scene scene;
+
+    void Start() {
+        scene =SceneManager.GetActiveScene();
+    }
 
     void Update() {
         //WASD movement:
@@ -40,20 +46,25 @@ public class ThirdPersonMovement : MonoBehaviour {
                 Vector3 moveDir = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
                 controller.Move(moveDir.normalized * speed * Time.deltaTime);
             }
+
+            if(groundedPlayer == false) gravityValue = -30.81f; else gravityValue = 0f;
+
+            //Jumping movement: 
+            groundedPlayer = controller.isGrounded;
+
+            if (Input.GetButtonDown("Jump") && groundedPlayer == true) {
+                playerVelocity.y = Mathf.Sqrt(jumpHeight * -0.50f * -30.81f);
+            }
+            playerVelocity.y += gravityValue * Time.deltaTime;
+            controller.Move(playerVelocity * Time.deltaTime);
         }
-
-        if(groundedPlayer == false) gravityValue = -30.81f; else gravityValue = 0f;
-
-        //Jumping movement: 
-        groundedPlayer = controller.isGrounded;
-
-        if (Input.GetButtonDown("Jump") && groundedPlayer == true) {
-            playerVelocity.y = Mathf.Sqrt(jumpHeight * -0.50f * -30.81f);
-        }
-        playerVelocity.y += gravityValue * Time.deltaTime;
-        controller.Move(playerVelocity * Time.deltaTime);
     
         //helth
-        if (bungieHP <= 0) {pause = true; Debug.Log("You Died");}
+        if (bungieHP <= 0) {
+            Debug.Log("You Died");
+            pause = true;
+            Destroy(this.gameObject, 3f);
+            SceneManager.LoadScene("SampleScene");
+        }
     }
 }
