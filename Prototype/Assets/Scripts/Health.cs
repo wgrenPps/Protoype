@@ -38,6 +38,7 @@ public class Health : MonoBehaviour {
        
        if (other.tag == "trap") {
            spiked = true;
+            //any other tags will have to be put before the !=null, cause otherwise it will auto delete them
        } else if (other.tag != null) {
            convNum = other.tag;
            convList = new List<string[]>();
@@ -57,8 +58,8 @@ public class Health : MonoBehaviour {
    void OnTriggerExit() {
        spiked = false;
    }
-
-   void Update() {
+//update isn't running for some damned reason
+   void FixedUpdate() {
        healthDisplay.text = "Health: " + healthBar;
        if (healthBar <= 0) {
            deathMessage.text = "You died.";
