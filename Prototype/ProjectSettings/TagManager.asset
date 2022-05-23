@@ -8,6 +8,9 @@ TagManager:
   - Bad
   - Anchor
   - monster
+  - 1
+  - 2
+  - trap
   layers:
   - Default
   - TransparentFX

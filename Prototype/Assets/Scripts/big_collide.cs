@@ -8,7 +8,7 @@ public class big_collide : MonoBehaviour
     public GameObject trapSpike;
     public GameObject player;
 
-    private Health helth;
+    private HealthTrack helth;
     private bool spikesActive = false;
     private bool collided = false;
     private bool stabbed = false;
@@ -18,15 +18,11 @@ public class big_collide : MonoBehaviour
     void Start() {
         trapSpike.SetActive(false);
         cooldown = 0f;
-        helth = player.GetComponent<Health>();
+        helth = player.GetComponent<HealthTrack>();
     }
     void OnTriggerEnter(Collider other)
     {
         collided = true;
-        if (cooldown == 0) {
-            StartCoroutine(spikey()); 
-            cooldown = 5f;
-        }
     }
 
     void OnTriggerExit(Collider other) {
@@ -35,12 +31,15 @@ public class big_collide : MonoBehaviour
 
     void Update() {
         if (cooldown > 0) {
-        cooldown -= Time.deltaTime;
+            cooldown -= Time.deltaTime;
         }
         if (cooldown < 0) {
             cooldown = 0f;
         }
-        if (cooldown == 0) {
+        if (cooldown == 0 && collided == true)
+        {
+            StartCoroutine(spikey());
+            cooldown = 5f;
             stabbed = false;
         }
         if (spikesActive && collided && helth.spiked && stabbed == false && !helth.dead) {
@@ -53,9 +52,6 @@ public class big_collide : MonoBehaviour
         yield return new WaitForSeconds(1f);
         trapSpike.SetActive(true);
         spikesActive = true;
-        if (helth.spiked) {
-            helth.healthBar--;
-        }
         yield return new WaitForSeconds(1f);
         trapSpike.SetActive(false);
         spikesActive = false;

@@ -1,0 +1,59 @@
+1; 1; If you're going to break me out of this dismal place, then you should get moving!; 5; (you can move around by pressing W,A,S, and D)
+1; 2; Yeah, I got it. I’ve done this before y’know?; 3
+2; 1; Good, keep moving. The faster you free me, the faster we can leave.; 3.5
+2; 2; Impatient are we?; 1.5
+2; 1; Why wouldn’t I be? It’s been awfully boring sitting here for so many years… but I'll try to be patient for now. First things first, get over that pillar in front of you. I’m assuming you can jump?; 5; (you can jump over fallen rubble by pressing spacebar)
+3; 1; I’ll take that as a yes. Now hurry up, and move to the next room.; 3
+3; 2; Sure.; 1.5
+4; 2: Spikes?; 1.5
+4; 1; A trap room. Meant to keep grave robbers away from the tomb of kings.; 3
+4; 2; Tomb of… are you saying you're a king?; 2
+4; 1; I used to be... I'll tell you later. For now just get past them, unless you’re in favor of getting impaled.; 4
+4; 2; I'm definitely not; 2; (press spacebar to jump over the spikes)
+5; 2; Wow, that was a piece of cake. I guess the last couple of ruins were some good practice.; 3.5
+5; 1; What’s a piece of cake?; 2
+5; 2; It’s a saying, for something easily done. You must be pretty old, to not know that expression?; 3.5
+5; 1; Very old, yes. You should get past this next trap.; 2.5
+6; 2; There, done. Could you tell me your kingdom, I might be able to tell exactly how old you are.; 3.5
+6; 1; It won’t help me with my current predicament, but I guess it will indulge my curiosity. Alright, I originated in the Mayan kingdom of Tikal.; 4
+6; 2; Mayan... are you saying you have been here since before 2600 B.C.E.! And the kingdom of Tikal fell in… I’m sorry. The temple of kings was where they made sacrifices to the gods, and buried the leaders of Tikal right?; 6
+6; 1; That's right. You clearly know your history. You should keep moving, there has been enough talk for now and you have yet to face everything this place has to offer.; 4.25
+6; 2; You're right, I’ll keep going.; 2; (use the controls given to you and your wits to get past the trap)
+7; 1; Grab that macuahuitl, you might need it.; 2
+7; 2; Your signature war clubs right? Could be useful.; 2.25
+8; 1; Right again, onto the next room.; 2
+9; 2; You interest me a lot… It's the first time I’ve gone into one of these and found someone still alive. Could you tell me your name?; 4
+9; 1; .....Halach.; 1.5
+9; 2; The Mayan word for king?; 2
+9; 1; A fitting name isn’t it?; 2
+9; 2; I guess. Should I be worried about that golem?; 2.5
+9; 1; Only if you're an intruder.; 2
+9; 2; Great… So it looks like I'm gonna put this macuahuitl to use right?; 3
+9; 1; Yeah, have you done this before?; 2
+9; 2; Nope. All of the tombs I’ve been in have had traps but no one to actually fight.; 3.25
+9; 1; Alright, I trained with a macuahuitl for 10 years so I should be able to give you a quick lesson. When you get close to him, he’s going to come at you fast and hard.; 4.25
+9; 2; What then?; 1
+9; 1; Back up and dodge its strike. After that, rush in and slam it with the club. If you can do that a few times, it should go down.; 3.5
+9; 2; Sounds easy enough.; 2; (Press left click to swing your macuahuitl.)
+10; 2; Done. That wasn’t too hard.; 2
+10; 1; Great, cause there's two more ahead.; 2.25
+10; 2; Huh?; 1
+10; 1; It'll be fine, just do the same as you did with the first golem.; 2.5; (fight the golems to practice your combat.)
+11; 2; Now that’s taken care of, I’d like to hear more about the meaning behind your name.; 2.5
+11; 1; I am- was.. a king. It was decided the moment I was born, I trained and studied my whole life for it, it was all the meaning I had in my life: the protection and prosperity of my kingdom.Then the day after I was crowned a poison was added in my evening drink that turned me to stone. I blacked out, and the next thing I knew I was trapped here.; 8
+11; 2; That’s terrible Halach... I had a similar situation.; 2.5
+11; 1; What do you mean?; 1.5
+11; 2; Ever since I was a little kid, I’ve wanted to be an archeologist and geologist. Rocks and fossils always interested me, more than anything else. My dad died when I was little, which pushed too much work on my mom. She got sick and I had to drop my education so that I could take jobs to pay her medical bills.; 7
+11; 1; How did you end up here?; 2
+11; 2; Normal jobs weren’t paying enough, so I put my skills to use.; 3
+11; 1;  I think we've had enough talk of histories today, both yours and mine, and the final room is just up ahead.; 3.75
+11; 2; That’s fine with me. You’ve satiated my curiosity enough.; 3
+12; 2; Those golems were a little tough, but I'm glad they were the last obstacle. Now that there's nothing el- .... alright what the hell is that.; 4
+12; 1; The Guardian. He protects me and the tomb of kings from raiders who would want to desecrate them. In this case, you would be the raider. THIS will be your final obstacle between you and both of our goals.; 5
+12; 2; But did it seriously have to be THAT?; 2.25
+12; 1; I thought you adventurers loved this kind of stuff.; 2.5
+12; 2; I'm an adrenaline junkie, not suicidal, Halach!; 2.5
+12; 1; You’ll be fine. It’s the same as the golems before, just bigger. You already know what to do.; 3; (get past the Guardian to obtain your treasure and give Halach his freedom)
+13; 1; Nicely done. Now get me off of this pedestal, grab your treasure, and let's go!; 3
+13; 2; On it.; 1
+69; 3; this is where the script stops, send into final cutscene + credits
