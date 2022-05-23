@@ -57,6 +57,10 @@ public class ThirdPersonMovement : MonoBehaviour {
             }
             playerVelocity.y += gravityValue * Time.deltaTime;
             controller.Move(playerVelocity * Time.deltaTime);
+
+            /*if (groundedPlayer == true && controller.velocity.magnitude > 2f && audio.isPlaying == false) {
+                audio.Play();
+            }*/
         }
     
         //helth
