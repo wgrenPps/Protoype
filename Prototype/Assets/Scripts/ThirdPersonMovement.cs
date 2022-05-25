@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 
 public class ThirdPersonMovement : MonoBehaviour {
@@ -23,13 +22,15 @@ public class ThirdPersonMovement : MonoBehaviour {
 
     //Player Health
     //should move this into healthTracker script
-    public int bungieHP;
     bool pause;
+    private HealthTrack helth;
 
-    Scene scene;
+    //Death button stuffs
+    public GameObject DeathButton;
 
     void Start() {
-        scene =SceneManager.GetActiveScene();
+        helth = Bungie.GetComponent<HealthTrack>();
+        DeathButton.SetActive(false);
     }
 
     void Update() {
@@ -61,11 +62,10 @@ public class ThirdPersonMovement : MonoBehaviour {
         }
     
         //helth
-        if (bungieHP <= 0) {
-            Debug.Log("You Died");
+        if (helth.healthBar <= 0) {
             pause = true;
             Destroy(this.gameObject, 3f);
-            SceneManager.LoadScene("SampleScene");
+            DeathButton.SetActive(true);
         }
     }
 }

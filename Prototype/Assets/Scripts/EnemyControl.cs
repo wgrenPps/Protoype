@@ -29,12 +29,12 @@ public class EnemyControl : MonoBehaviour {
 
 
     //Player Health 
-    ThirdPersonMovement TPM;
+    HealthTrack helth;
 
 
     void Start() {
         enemyHealth = 5;
-        TPM = bungie.GetComponent<ThirdPersonMovement>();
+        helth = bungie.GetComponent<HealthTrack>();
     }
 
     private void Awake() {
@@ -89,7 +89,7 @@ public class EnemyControl : MonoBehaviour {
         monster.SetDestination(transform.position);
 
         if (!alreadyAttacked) {
-            TPM.bungieHP --;
+            helth.healthBar --;
             alreadyAttacked = true;
             Invoke(nameof(ResetAttack), timeBetweenAttacks);
         }

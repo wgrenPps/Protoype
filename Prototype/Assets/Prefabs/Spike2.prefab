@@ -11086,7 +11086,7 @@ GameObject:
   - component: {fileID: 93956192304342606}
   - component: {fileID: 93956192304342642}
   m_Layer: 0
-  m_Name: spiketrap
+  m_Name: Spike2
   m_TagString: trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11167,8 +11167,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 5.5, z: 1}
+  m_Center: {x: 0, y: 2.5, z: 0}
 --- !u!114 &93956192304342642
 MonoBehaviour:
   m_ObjectHideFlags: 0

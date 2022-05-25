@@ -11,6 +11,7 @@ TagManager:
   - 1
   - 2
   - trap
+  - DeathButton
   layers:
   - Default
   - TransparentFX
