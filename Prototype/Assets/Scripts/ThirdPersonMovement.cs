@@ -1,8 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class ThirdPersonMovement : MonoBehaviour {
+    public Transform Bungie;
     //moving junk
     public CharacterController controller;
     public Transform cam;
@@ -19,42 +22,50 @@ public class ThirdPersonMovement : MonoBehaviour {
     float tunrSmoothVelocity;
 
     //Player Health
+    //should move this into healthTracker script
     public int bungieHP;
+    bool pause;
+
+    Scene scene;
+
+    void Start() {
+        scene =SceneManager.GetActiveScene();
+    }
 
     void Update() {
         //WASD movement:
+        if (pause != true) {
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");
         Vector3 direction = new Vector3(horizontal, 0f, vertical).normalized;
         
-        if(direction.magnitude >= 0.1f) {
-            float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg + cam.eulerAngles.y;
-            float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref tunrSmoothVelocity, turnSmoothTime);
-            transform.rotation = Quaternion.Euler(0f, angle, 0f);
+            if(direction.magnitude >= 0.1f) {
+                float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg + cam.eulerAngles.y;
+                float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref tunrSmoothVelocity, turnSmoothTime);
+                transform.rotation = Quaternion.Euler(0f, angle, 0f);
 
-            Vector3 moveDir = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
-            controller.Move(moveDir.normalized * speed * Time.deltaTime);
-        }
-        if(groundedPlayer == false) {gravityValue = -30.81f;} else {gravityValue = 0f;}
-
-        //Jumping movement: 
-        groundedPlayer = controller.isGrounded;
-
-        if (Input.GetButtonDown("Jump") && groundedPlayer == true) {
-            playerVelocity.y = Mathf.Sqrt(jumpHeight * -0.50f * -30.81f);
-        }
-        playerVelocity.y += gravityValue * Time.deltaTime;
-        controller.Move(playerVelocity * Time.deltaTime);
-    /*
-        GameObject[] Enemies;
-        Enemies = GameObject.FindGameObjectsWithTag("Bad");
-        Debug.Log(Enemies.Length);
-        for(var o = 0; o < Enemies.Length; o ++) {
-            EnemyControl bungieInAttackRange = Enemies[o].GetComponent<EnemyControl>(); //aquiring attack range from other script
-            if (bungieInAttackRange.bungieInAttackRange == true) {
-                //bungieHP--;
+                Vector3 moveDir = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
+                controller.Move(moveDir.normalized * speed * Time.deltaTime);
             }
+
+            if(groundedPlayer == false) gravityValue = -30.81f; else gravityValue = 0f;
+
+            //Jumping movement: 
+            groundedPlayer = controller.isGrounded;
+
+            if (Input.GetButtonDown("Jump") && groundedPlayer == true) {
+                playerVelocity.y = Mathf.Sqrt(jumpHeight * -0.50f * -30.81f);
+            }
+            playerVelocity.y += gravityValue * Time.deltaTime;
+            controller.Move(playerVelocity * Time.deltaTime);
         }
-        */
+    
+        //helth
+        if (bungieHP <= 0) {
+            Debug.Log("You Died");
+            pause = true;
+            Destroy(this.gameObject, 3f);
+            SceneManager.LoadScene("SampleScene");
+        }
     }
 }

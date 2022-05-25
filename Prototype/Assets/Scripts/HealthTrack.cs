@@ -12,16 +12,18 @@ public class HealthTrack : MonoBehaviour
    public TextMeshProUGUI deathMessage;
    public GameObject deathScreen;
    public bool dead;
+   private string[] urDead = {"You died", "git gud", "ur bad", "lol", ":(", "utter garbage", "sick death bro"};
+   private int randomness;
 
     void Start() {
-        Debug.Log("here");
         deathScreen.SetActive(false);
     }
 
     void FixedUpdate() {
        healthDisplay.text = "Health: " + healthBar;
-       if (healthBar <= 0) {
-           deathMessage.text = "You died.";
+       if (healthBar <= 0 && dead == false) {
+           randomness = Random.Range(0, urDead.Length);
+           deathMessage.text = urDead[randomness];
            deathScreen.SetActive(true);
            dead = true;
        }

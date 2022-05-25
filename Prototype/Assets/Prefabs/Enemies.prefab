@@ -238,9 +238,10 @@ MonoBehaviour:
   walkPointRange: 10
   timeBetweenAttacks: 1
   sightRange: 10
-  attackRange: 2
+  attackRange: 1.5
   bungieInSightRange: 0
   bungieInAttackRange: 0
+  drop: {fileID: 2020846551154198685, guid: 11a66c586d0d0924da74ef90bed87acc, type: 3}
 --- !u!195 &7107816904701422107
 NavMeshAgent:
   m_ObjectHideFlags: 0

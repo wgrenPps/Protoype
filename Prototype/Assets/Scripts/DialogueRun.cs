@@ -53,9 +53,10 @@ public class DialogueRun : MonoBehaviour {
            if (convList[c].Length == 5) {
                tutorial.text = convList[c][4];
            }
-           if (convList[c][1] == "1") {
+           if (convList[c][1] == " 1") {
                profileTot.SetActive(true);
-           } else if (convList[c][1] == "2") {
+               //need to add spaces for some reason. KEEP THESE!
+           } else if (convList[c][1] == " 2") {
                profileBun.SetActive(true);
            }
            yield return new WaitForSeconds(float.Parse(convList[c][3]));
