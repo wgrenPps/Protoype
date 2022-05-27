@@ -6,6 +6,7 @@ using UnityEngine.AI;
 public class EnemyControl : MonoBehaviour {
     public NavMeshAgent monster;
     public Transform bungie;
+    public GameObject Player;
     
     public LayerMask whatIsGround, whatIsBungie;
 
@@ -29,16 +30,17 @@ public class EnemyControl : MonoBehaviour {
 
 
     //Player Health 
-    HealthTrack helth;
+    public HealthTrack helth;
 
 
     void Start() {
         enemyHealth = 5;
-        helth = bungie.GetComponent<HealthTrack>();
+        helth = Player.GetComponent<HealthTrack>();
     }
 
     private void Awake() {
         bungie = GameObject.Find("thirdPersonPlayer").transform;
+        Player = GameObject.Find("Bungie");
         monster = GetComponent<NavMeshAgent>();
     }
    
