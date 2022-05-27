@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 
 public class ThirdPersonMovement : MonoBehaviour {
@@ -59,6 +60,10 @@ public class ThirdPersonMovement : MonoBehaviour {
             }
             playerVelocity.y += gravityValue * Time.deltaTime;
             controller.Move(playerVelocity * Time.deltaTime);
+
+            /*if (groundedPlayer == true && controller.velocity.magnitude > 2f && audio.isPlaying == false) {
+                audio.Play();
+            }*/
         }
     
         //helth
