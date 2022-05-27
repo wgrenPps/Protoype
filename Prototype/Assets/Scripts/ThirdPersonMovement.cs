@@ -29,7 +29,9 @@ public class ThirdPersonMovement : MonoBehaviour {
     //Death button stuffs
     public GameObject DeathButton;
 
+    AudioSource walking;
     void Start() {
+        walking = Bungie.parent.GetComponent<AudioSource>();
         helth = Bungie.GetComponent<HealthTrack>();
         DeathButton.SetActive(false);
     }
@@ -57,13 +59,16 @@ public class ThirdPersonMovement : MonoBehaviour {
 
             if (Input.GetButtonDown("Jump") && groundedPlayer == true) {
                 playerVelocity.y = Mathf.Sqrt(jumpHeight * -0.50f * -30.81f);
-            }
+            } else {Bungie.parent.position = new Vector3(Bungie.parent.position.x, Mathf.Round(Bungie.parent.position.y), Bungie.parent.position.z);}
             playerVelocity.y += gravityValue * Time.deltaTime;
             controller.Move(playerVelocity * Time.deltaTime);
 
-            /*if (groundedPlayer == true && controller.velocity.magnitude > 2f && audio.isPlaying == false) {
-                audio.Play();
-            }*/
+            if ( controller.velocity.magnitude > 0f) {
+                walking.mute = false;
+            } else {walking.mute = true;}
+
+            
+            
         }
     
         //helth
