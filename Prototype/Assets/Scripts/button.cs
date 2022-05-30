@@ -11,7 +11,6 @@ public class button : MonoBehaviour
     }
 
     public void DeathReset() {
-        Debug.Log("hi");
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene(scene.name);
     }
 }

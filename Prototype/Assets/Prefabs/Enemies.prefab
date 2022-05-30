@@ -227,13 +227,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   monster: {fileID: 7107816904701422107}
   bungie: {fileID: 0}
+  Player: {fileID: 0}
+  powerA: 1
   whatIsGround:
     serializedVersion: 2
     m_Bits: 8
   whatIsBungie:
     serializedVersion: 2
     m_Bits: 64
-  enemyHealth: 0
+  enemyHealth: 5
   walkPoint: {x: 0, y: 0, z: 0}
   walkPointSet: 0
   walkPointRange: 10
@@ -243,6 +245,7 @@ MonoBehaviour:
   bungieInSightRange: 0
   bungieInAttackRange: 0
   drop: {fileID: 2020846551154198685, guid: 11a66c586d0d0924da74ef90bed87acc, type: 3}
+  helth: {fileID: 0}
 --- !u!195 &7107816904701422107
 NavMeshAgent:
   m_ObjectHideFlags: 0

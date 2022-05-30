@@ -7,6 +7,7 @@ public class EnemyControl : MonoBehaviour {
     public NavMeshAgent monster;
     public Transform bungie;
     public GameObject Player;
+    public int powerA;
     
     public LayerMask whatIsGround, whatIsBungie;
 
@@ -32,10 +33,14 @@ public class EnemyControl : MonoBehaviour {
     //Player Health 
     public HealthTrack helth;
 
+    //door opener
+    DoorOpen doortracker;
+
 
     void Start() {
-        enemyHealth = 5;
+        //enemyHealth = 5;
         helth = Player.GetComponent<HealthTrack>();
+        doortracker = Player.GetComponent<DoorOpen>();
     }
 
     private void Awake() {
@@ -56,7 +61,10 @@ public class EnemyControl : MonoBehaviour {
     }
 
     private void FixedUpdate() {
-        if (enemyHealth == 0) Destroy(this.gameObject);
+        if (enemyHealth == 0) {
+            doortracker.enemiesDead++;
+            Destroy(this.gameObject);
+        }
     }
     
     private void Wander() {
@@ -91,7 +99,7 @@ public class EnemyControl : MonoBehaviour {
         monster.SetDestination(transform.position);
 
         if (!alreadyAttacked) {
-            helth.healthBar --;
+            helth.healthBar -= powerA;
             alreadyAttacked = true;
             Invoke(nameof(ResetAttack), timeBetweenAttacks);
         }
@@ -102,7 +110,8 @@ public class EnemyControl : MonoBehaviour {
 
     //when enemy gets destroyed it becomes a coin
     private void OnDestroy() {
-        Instantiate(drop, new Vector3(transform.position.x, transform.position.y + 1, transform.position.z), drop.transform.rotation);
+        //this is not neccesary. Will keep just in case
+        //Instantiate(drop, new Vector3(transform.position.x, transform.position.y + 1, transform.position.z), drop.transform.rotation);
     }
 
     

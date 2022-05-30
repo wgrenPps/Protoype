@@ -9,7 +9,7 @@
 4; 1; A trap room. Meant to keep grave robbers away from the tomb of kings.; 3
 4; 2; Tomb of… are you saying you're a king?; 2
 4; 1; I used to be... I'll tell you later. For now just get past them, unless you’re in favor of getting impaled.; 4
-4; 2; I'm definitely not; 2; (press spacebar to jump over the spikes)
+4; 2; I'm definitely not; 2
 5; 2; Wow, that was a piece of cake. I guess the last couple of ruins were some good practice.; 3.5
 5; 1; What’s a piece of cake?; 2
 5; 2; It’s a saying, for something easily done. You must be pretty old, to not know that expression?; 3.5
@@ -21,7 +21,7 @@
 6; 2; You're right, I’ll keep going.; 2; (use the controls given to you and your wits to get past the trap)
 7; 1; Grab that macuahuitl, you might need it.; 2
 7; 2; Your signature war clubs right? Could be useful.; 2.25
-8; 1; Right again, onto the next room.; 2
+7; 1; Right again, onto the next room.; 2
 9; 2; You interest me a lot… It's the first time I’ve gone into one of these and found someone still alive. Could you tell me your name?; 4
 9; 1; .....Halach.; 1.5
 9; 2; The Mayan word for king?; 2
