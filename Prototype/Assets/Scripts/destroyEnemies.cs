@@ -6,8 +6,8 @@ public class destroyEnemies : MonoBehaviour {
     GameObject anchor;
     Vector3 merph;
     Rigidbody rb;
-    Vector2 force;
-    bool hit;
+    public Vector2 force;
+    public bool hit;
     float t;
     EnemyControl HP;
 
@@ -21,7 +21,7 @@ public class destroyEnemies : MonoBehaviour {
           audioSource.PlayOneShot(impact, 0.7F);
 
             merph = anchor.transform.rotation.eulerAngles;
-            hit = true; // gets hit
+            hit = true; // gets hit 
             HP = other.transform.parent.GetComponent<EnemyControl>(); //aquiring health from other script
             HP.enemyHealth -= 1; // lose health
             rb = other.transform.parent.GetComponent<Rigidbody>();

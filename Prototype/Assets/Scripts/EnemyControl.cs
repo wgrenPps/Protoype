@@ -8,6 +8,7 @@ public class EnemyControl : MonoBehaviour {
     public Transform bungie;
     public GameObject Player;
     public int powerA;
+    public GameObject stick;
     
     public LayerMask whatIsGround, whatIsBungie;
 
@@ -36,15 +37,21 @@ public class EnemyControl : MonoBehaviour {
     //door opener
     DoorOpen doortracker;
 
+    // knockback
+    public destroyEnemies knock;
+    public Rigidbody rb;
+
 
     void Start() {
         //enemyHealth = 5;
         helth = Player.GetComponent<HealthTrack>();
         doortracker = Player.GetComponent<DoorOpen>();
+        knock = stick.GetComponent<destroyEnemies>();
     }
 
     private void Awake() {
         bungie = GameObject.Find("thirdPersonPlayer").transform;
+        stick = GameObject.Find("STICC");
         Player = GameObject.Find("Bungie");
         monster = GetComponent<NavMeshAgent>();
     }
@@ -65,8 +72,13 @@ public class EnemyControl : MonoBehaviour {
             doortracker.enemiesDead++;
             Destroy(this.gameObject);
         }
+        if (knock.hit == true)
+        {
+            rb.AddForce(-knock.force.x, 0, -knock.force.y);
+            knock.hit = false;
+        }
     }
-    
+
     private void Wander() {
         if (!walkPointSet) SearchWalkPoint();
 

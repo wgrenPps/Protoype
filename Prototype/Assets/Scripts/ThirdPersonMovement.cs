@@ -31,7 +31,7 @@ public class ThirdPersonMovement : MonoBehaviour {
 
     AudioSource walking;
     void Start() {
-        walking = Bungie.parent.GetComponent<AudioSource>();
+        walking = Bungie.GetComponent<AudioSource>();
         helth = Bungie.GetComponent<HealthTrack>();
         DeathButton.SetActive(false);
     }

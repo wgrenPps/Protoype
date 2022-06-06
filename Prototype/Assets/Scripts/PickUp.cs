@@ -15,6 +15,7 @@ public class PickUp : MonoBehaviour
     void OnTriggerEnter(Collider other) {
         if (other.tag == "Player") {
             stick.SetActive(true);
+            Destroy(gameObject);
         }
     }
 }
